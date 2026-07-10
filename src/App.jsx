@@ -1,15 +1,15 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import DaftarDosen from "./pages/DaftarDosen";
 
 function App() {
   return (
-    <BrowserRouter basename="/ppkn-dosen">
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Navigate to="/id" replace />} />
         <Route path="/:lang" element={<DaftarDosen />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
