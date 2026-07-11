@@ -6,8 +6,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navigate to="/id" replace />} />
-        <Route path="/:lang" element={<DaftarDosen />} />
+        <Route path="/" element={<Navigate to="/dosen/id" replace />} />
+        <Route path="/dosen" element={<Navigate to="/dosen/id" replace />} />
+        <Route path="/dosen/:lang" element={<DaftarDosen />} />
       </Routes>
     </BrowserRouter>
   );
