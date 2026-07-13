@@ -1,14 +1,28 @@
-* {
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: Inter;
   font-weight: 600;
   font-style: normal;
-  overflow: hidden;
 }
 
-.app-container {
+
+
+.app-container{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+  font-weight: 600;
+  font-style: normal;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  /* overflow: hidden; */
+}
+
+/* .app-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -24,4 +38,4 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 25px;
-}
+}  */
