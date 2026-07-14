@@ -5,15 +5,17 @@ import VisiMisi from "./pages/VisiMisi";
 
 function App() {
   return (
+    <div className="app-container">
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Navigate to="/dosen/id" replace />} />
         <Route path="/dosen" element={<Navigate to="/dosen/id" replace />} />
         <Route path="/dosen/:lang" element={<DaftarDosen />} />
 
-        <Route path="/visi-misi" element={<VisiMisi/>}></Route>
-      </Routes>
-    </BrowserRouter>
+          <Route path="/visi-misi" element={<VisiMisi />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
