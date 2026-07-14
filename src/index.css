@@ -5,12 +5,18 @@
   font-family: Inter;
   font-weight: 600;
   font-style: normal;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 .app-container {
   max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
-  min-height: 900vh;
+  /* margin-bottom: 90vh; */
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    margin-bottom: 90vh; /* Bakal aktif HANYA di layar maksimal 768px */
+  }
 }
