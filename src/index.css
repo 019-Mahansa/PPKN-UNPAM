@@ -9,13 +9,9 @@
 }
 
 .app-container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
-}
-
-.grid-dosen {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 25px;
+  min-height: 900vh;
+  overflow-y: hidden;
 }
