@@ -17,6 +17,6 @@
 
 @media (max-width: 768px) {
   .app-container {
-    min-height: 500vh;
+    min-height: 200vh;
   }
 }
