@@ -14,16 +14,8 @@
   padding: 20px;
 }
 
-/* .title {
-  text-align: center;
-  margin-bottom: 40px;
-  color: #2d3748;
-} */
-
-/* asdasd */
-
 .grid-dosen {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 25px;
 }
