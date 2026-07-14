@@ -5,7 +5,7 @@
   font-family: Inter;
   font-weight: 600;
   font-style: normal;
-  overflow-y: hidden;
+  /* overflow: hidden; */
 }
 
 .app-container {
@@ -17,6 +17,6 @@
 
 @media (max-width: 768px) {
   .app-container {
-    margin-bottom: 800vh;
+    min-height: 500vh;
   }
 }
