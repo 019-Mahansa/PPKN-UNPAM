@@ -24,7 +24,7 @@
   text-align: center;
   transition: transform 0.2s;
   height: 100%;
-  background-color: #f7fafc; /* #e1ad02 keknya asik */
+  /* background-color: #f7fafc; */
 }
 
 .card-dosen:hover {
