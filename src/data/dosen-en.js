@@ -15,7 +15,7 @@ export const dataDosenEN = [
     pendidikan: { magister: "-", doktor: "Educational Management" },
     keahlian: "Politics and Statecraft",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/5Eap4e-wD2pYjU13lUVx1mjSSRT01DVHuLpRiQ9TuPqBUReRsAiq8gNwJauM9WW1Y3Sk9w==",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const dataDosenEN = [
     pendidikan: { magister: "Legal Studies", doktor: "-" },
     keahlian: "Education",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/uPXdPN0kthYgIjRy9hXTULRylOQZoVNEs7p5x5ZGBfP4eSS3lIJZcXqkpZ7JJk8J6Zlp2g==",
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ export const dataDosenEN = [
     pendidikan: { magister: "Sociology Education", doktor: "-" },
     keahlian: "Social Sciences",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/-Sd_4vw2xj8se7YYcMxRKP9FqCkz6YPmJFnB8aDd-pSg7mYX8CtNGpMPGzxGgzkOqbIuZw==",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ export const dataDosenEN = [
     pendidikan: { magister: "Legal Studies", doktor: "-" },
     keahlian: "Law and Civics",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/RlkevAoiW7zKYfH0nHRa1boc_o_vhBBCoMo-aiAspa7ANnPru_kggerzqQVhr_iUiZDSxA==",
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ export const dataDosenEN = [
     pendidikan: { magister: "Legal Studies", doktor: "Educational Management" },
     keahlian: "Law",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/QlWNAKR0T5D2lnOB9737cDwzYWUl6_NYIgGtXlyAxtstMuMIdOVzYOjGoFGSI6FtPAmTzw==",
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ export const dataDosenEN = [
     pendidikan: { magister: "Indonesian Language Education", doktor: "-" },
     keahlian: "Education",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/pdxPOQtsXKEasn07RubGiLE5kPLsRRf7y00I6RLguB5Tyi3LKIMVC7lrwJ0qgxoBFs69eg==",
   },
   {
     id: 8,
@@ -69,7 +69,7 @@ export const dataDosenEN = [
     pendidikan: { magister: "Law and Citizenship", doktor: "-" },
     keahlian: "Pancasila and Civic Education",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/n45g1dIDV2uG7qDmbgyORCRPXG5F4M6lBZgB0QbQyKKknlcEeDuB2nMpz9dOwvTtO4OiKg==",
   },
   {
     id: 9,
@@ -81,7 +81,7 @@ export const dataDosenEN = [
     },
     keahlian: "Education",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/mUAB50Q6ju2MUJ9HAB6KVswzraSOxKaMtwqbAdD_AcyBilRglDOw18tViPIRiRhEdyRNdA==",
   },
   {
     id: 10,
@@ -93,7 +93,7 @@ export const dataDosenEN = [
     },
     keahlian: "Education",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/qkdiU101_tLg1u9kXAEGSfMnMOhqe_ppQDtYIDimT0bDJ0ax5ITQbN8b191Pi1McZ2o2ng==",
   },
   {
     id: 11,
@@ -102,7 +102,7 @@ export const dataDosenEN = [
     pendidikan: { magister: "Legal Studies", doktor: "-" },
     keahlian: "Law",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/d-enyJjnyS1Q7OndKUfwM7ZfT9prkHcWgf08N_FTWw4XDYgJNBv6A_0rlfxEB5YY_dzjOA==",
   },
   {
     id: 12,
@@ -114,7 +114,7 @@ export const dataDosenEN = [
     },
     keahlian: "Pancasila and Civic Education",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/GTDaYctnF0CfPSKkTJ86IlZcXwmbMf3ptV6VyO64VETPPuYqRV8LS3EOY0EOkQkRcDH0sA==",
   },
   {
     id: 13,
@@ -123,7 +123,7 @@ export const dataDosenEN = [
     pendidikan: { magister: "Civic Education", doktor: "-" },
     keahlian: "Civic Education",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/D5V8Wkp5TEB6Ri4J4KK-UeO48pkEBUNKp4rYfaO2eHy7XTUqa17zmMt8qnfUHvbPPEsYSg==",
   },
   {
     id: 14,
@@ -135,7 +135,7 @@ export const dataDosenEN = [
     },
     keahlian: "Pancasila and Civic Education",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/sivEZhlrBEmNH8Fbj3MR0aklX3lDWNYP8_u9pUr1G0lrPgGHACnAj8IVUJrIw-xuktBcOQ==",
   },
   {
     id: 15,
@@ -147,7 +147,7 @@ export const dataDosenEN = [
     },
     keahlian: "Education",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/F02Cu1T_D-obp034Jx1mxZabJ6ni6zYQq4Asirk9Pwa0fIF5Si9wZtkeTign_nHsywBX8w==",
   },
   {
     id: 16,
@@ -156,7 +156,7 @@ export const dataDosenEN = [
     pendidikan: { magister: "Social Studies Education", doktor: "-" },
     keahlian: "Social Sciences",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/5qRTXO6oO-hGBqpfMR-UuN2urg3X-1hSKbVJOdA0xFFSFWfBpg0PvYd3_qh-S05c7QyOxw==",
   },
   {
     id: 17,
@@ -165,7 +165,7 @@ export const dataDosenEN = [
     pendidikan: { magister: "History", doktor: "Educational Technology" },
     keahlian: "Education",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/search/dosen/Awang%20Muhidin",
   },
   {
     id: 18,
@@ -174,7 +174,7 @@ export const dataDosenEN = [
     pendidikan: { magister: "Law", doktor: "-" },
     keahlian: "Law",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/ssom-jjroh62qZCLx8_1cn7xL8D_94zAEKHnVKltCMU1r3pzI8f0G6ddx9JHTB6zbLQD0w==",
   },
   {
     id: 19,
@@ -183,7 +183,7 @@ export const dataDosenEN = [
     pendidikan: { magister: "Law", doktor: "-" },
     keahlian: "Law",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/aAgFQOUPvqt9JJDZ9Q9OOf81dWc5RGu-fHqi47TXHzZE4-ICnQ9YCtfJcLVaZoqRfngk-A==",
   },
   {
     id: 20,
@@ -192,7 +192,7 @@ export const dataDosenEN = [
     pendidikan: { magister: "Sciences", doktor: "-" },
     keahlian: "Social Sciences",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/search/dosen/Amrizal%20Siagian",
   },
   {
     id: 21,
@@ -201,7 +201,7 @@ export const dataDosenEN = [
     pendidikan: { magister: "Law", doktor: "-" },
     keahlian: "Law",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/iG21SfNUeDJ2sUVAyn6ZdF54hn4ye-0fIYaPWeSpKcExjX6aWzFZZu_t9RjPljDnzfHmMw==",
   },
   {
     id: 22,
@@ -210,7 +210,7 @@ export const dataDosenEN = [
     pendidikan: { magister: "Civic Education", doktor: "-" },
     keahlian: "Pancasila and Civic Education",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/FariZYf7vNoWVx7Qh-gTICJhl9qrQT3wxU_wJwYyhRVmWD7Da30XKKMBmWfEGQEP6tGo8A==",
   },
   {
     id: 23,
@@ -219,7 +219,7 @@ export const dataDosenEN = [
     pendidikan: { magister: "National Resilience", doktor: "-" },
     keahlian: "Social Sciences",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/2PS7_dkm7QjZssJxrTHjGV20SY_89aG0RQPsJaTPHY5WKYCHvfYF4FUzY2kCSW7GCuTK4A==",
   },
   {
     id: 24,
@@ -231,7 +231,7 @@ export const dataDosenEN = [
     },
     keahlian: "Pancasila and Civic Education",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/xXwWwdBNBCPDzZeKwXd2lljVF5AGCB6j9dMV7FEBz3cfdcqVGc51eNx2DUWSYlVxLN8wsQ==",
   },
   {
     id: 25,
@@ -240,7 +240,7 @@ export const dataDosenEN = [
     pendidikan: { magister: "Law", doktor: "-" },
     keahlian: "Law",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/GEXGio4ZweZxliVo7XnKaGAxG2LT0u4KZHd5ojxZ-GjS_P97iWuZaahD848INI91YcZ77Q==",
   },
   {
     id: 26,
@@ -252,7 +252,7 @@ export const dataDosenEN = [
     },
     keahlian: "Pancasila and Civic Education",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/y44NANpbjHr34WOMljp9NwEchwErScRCjDOao_b96C8x97vDVg_4xe3zKZw7iWTp2xR5RQ==",
   },
   {
     id: 27,
@@ -264,7 +264,7 @@ export const dataDosenEN = [
     },
     keahlian: "Pancasila and Civic Education",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/mRI61O10qNZOkOVM6qVoqmz4ApIsvK7FAH71BM-ZvW4Ekm5Esadj4NUiLFW-Ooi2nAPsVg==",
   },
   {
     id: 28,
@@ -273,7 +273,7 @@ export const dataDosenEN = [
     pendidikan: { magister: "English Language Education", doktor: "-" },
     keahlian: "Education",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/9FOFsXq3cO84J7QFNYZvzpueo9tEvySYCIBNCyIx_WpJwCfSha5OJt8huEkoq2FjSIjwXg==",
   },
   {
     id: 29,
@@ -282,7 +282,7 @@ export const dataDosenEN = [
     pendidikan: { magister: "Law", doktor: "-" },
     keahlian: "Law",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/CacqwBbQWnfwUnKPLW8N1Khe5GEXI5hBSHwGsar2eG56CLznYfpYvjTZwFQQKURspHAq3A==",
   },
   {
     id: 30,
@@ -291,7 +291,7 @@ export const dataDosenEN = [
     pendidikan: { magister: "Social Studies Education", doktor: "-" },
     keahlian: "Social Sciences",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/mP0nPb4nH5Av8D64GT2j-JecpPqn1v5V-vlcA_C12Ga8SeCVzR_iNCpsFRUTjjA2_Sj0yA==",
   },
   {
     id: 31,
@@ -300,7 +300,7 @@ export const dataDosenEN = [
     pendidikan: { magister: "Instructional Technology", doktor: "-" },
     keahlian: "Education",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/NAz0OJNxsa7rL_dg8srBp2ALqBQy7xWcWxy52I1xqcithH1Xmn_Q7vb_ncxmCHaq1b-sbA==",
   },
   {
     id: 32,
@@ -309,7 +309,7 @@ export const dataDosenEN = [
     pendidikan: { magister: "Educational Technology", doktor: "-" },
     keahlian: "Education",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/Prn7hwu61u8FslbsdIETbw1sW-osDBH7uh33b4D-VMeJhPSnsmOpPn0JmJdrN8Rl14AyeA==",
   },
   {
     id: 33,
@@ -318,7 +318,7 @@ export const dataDosenEN = [
     pendidikan: { magister: "Law", doktor: "-" },
     keahlian: "Law",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/mC4Gj7P_BAMDKq1_rAgXcBLPqboIgwo-4WUMGWdrHeWT3veitXHTE5kmsLaaqi5EUKAfSA==",
   },
   {
     id: 34,
@@ -327,7 +327,7 @@ export const dataDosenEN = [
     pendidikan: { magister: "Law", doktor: "-" },
     keahlian: "Law",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/8LhdwE7NiKS9KusdrveU2VLnWi3beY92a9fT06mldP56uB1AjaqY9Q_VFWY7a9ckJlHhcw==",
   },
   {
     id: 35,
@@ -336,7 +336,7 @@ export const dataDosenEN = [
     pendidikan: { magister: "Law", doktor: "-" },
     keahlian: "Law",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/qym8HhXuW-N5GiGb3IBTBGRdSSrHrLUuSPIvUtVkmXqD_rVvsYZ03Zng9SnGeacCCYMmZA==",
   },
   {
     id: 36,
@@ -345,6 +345,6 @@ export const dataDosenEN = [
     pendidikan: { magister: "Law", doktor: "-" },
     keahlian: "Law",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/YYj2DmOU2uRj-2EhGWXFozrHWghCE0X0WEhCIdxxqHugzMrCTwDrh2XFGgrelUzDyngnvQ==",
   },
 ];
