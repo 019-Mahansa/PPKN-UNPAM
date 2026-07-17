@@ -1,7 +1,7 @@
 // Mapping foto dosen. Jika tidak ada, fallback ke icon.jpeg.
 // Import gambar di sini agar Vite bisa membundle dan hashing nama file.
 import icon from "../assets/imageDosen/icon.jpeg";
-import ichwani from "../assets/1.png";
+import ichwani from "../assets/imageDosen/1.png";
 import sugiyanto from "../assets/imageDosen/Sugiyanto.jpg";
 import roni from "../assets/imageDosen/Roni_Rustandi.jpg";
 import herdi from "../assets/imageDosen/herdi_wisman_jaya.jpg";
