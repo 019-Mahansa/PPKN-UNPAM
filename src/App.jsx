@@ -14,7 +14,7 @@ function App() {
         <Route path="/dosen/:lang" element={<DaftarDosen />} />
 
         <Route path="/visi-misi" element={<VisiMisi />}/>
-        <Route parh="/tentang-prodi" element={<TentangProdi/>}/>
+        <Route path="/tentang-prodi" element={<TentangProdi />}/>
         </Routes>
       </BrowserRouter>
     </div>
