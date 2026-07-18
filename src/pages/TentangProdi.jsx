@@ -2,7 +2,7 @@ import React from "react";
 
 import './css/TentangProdi.css'
 
-import gambarUnpam from '../assets/Prodi PPKn/Pendidikan Pancasila dan Kewarganegaraan.png'
+import gambarUnpam from '../assets/Prodi PPKn/Pendidikan Pancasila dan Kewarganegaraan.webp'
 
 
 function TentangProdi(){
