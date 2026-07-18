@@ -106,11 +106,11 @@ export const dataDosenEN = [
   },
   {
     id: 12,
-    nama: "Mas Fierma Janvierna L P, S.Pd., M.Pd",
+    nama: "Dr. Mas Fierma Janvierna L P, S.Pd., M.Pd",
     nidn: "416017705",
     pendidikan: {
       magister: "Pancasila and Civic Education",
-      doktor: "-",
+      doktor: "Pancasila and Civic Education",
     },
     keahlian: "Pancasila and Civic Education",
     pddikti:
@@ -160,7 +160,7 @@ export const dataDosenEN = [
   },
   {
     id: 17,
-    nama: "Dr. Awang Muhidin, S.Pd., M.Pd",
+    nama: "Dr. Aeng Muhidin, S.Pd., M.Pd",
     nidn: "421108203",
     pendidikan: { magister: "History", doktor: "Educational Technology" },
     keahlian: "Education",

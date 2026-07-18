@@ -24,6 +24,9 @@ import nurullita from "../assets/imageDosen/Nurrullita.jpg";
 import yayuk from "../assets/imageDosen/Yayuk_Muji_Rahayu.jpg";
 import ivana from "../assets/imageDosen/Ivana_Aprilliana-.jpg";
 import suanto from "../assets/imageDosen/Suanto.jpg";
+import etiHayati from "../assets/imageDosen/eti hayati.png";
+import sulastri from "../assets/imageDosen/Sulastri"
+import Supandri from "../assets/imageDosen/Supandri"
 
 // key = id dosen, value = import foto
 const fotoMap = {
@@ -33,7 +36,7 @@ const fotoMap = {
   4: icon, // Aulia -> icon
   5: icon, // Nurdiyana -> icon
   6: herdi,
-  7: icon, // Eti Hayati -> icon
+  7: etiHayati, // Eti Hayati -> icon
   8: icon, // Abd. Chaidir -> icon
   9: ahmadNana,
   10: dedeSiswandi,
@@ -60,9 +63,9 @@ const fotoMap = {
   31: icon, // Ruli Hardi -> icon
   32: icon, // M. Finandar -> icon
   33: ivana,
-  34: icon, // Supandri -> icon
+  34: Supandri, // Supandri -> icon
   35: suanto,
-  36: icon, // Sulastri -> icon
+  36: sulastri, // Sulastri -> icon
 };
 
 export function getFotoDosen(id) {
