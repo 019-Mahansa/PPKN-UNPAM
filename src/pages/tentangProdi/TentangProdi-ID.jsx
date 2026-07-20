@@ -1,11 +1,9 @@
-import React from "react";
+import '../css/TentangProdi.css'
 
-import './css/TentangProdi.css'
-
-import gambarUnpam from '../assets/Prodi PPKn/Pendidikan Pancasila dan Kewarganegaraan.webp'
+import gambarUnpam from '../../assets/Prodi PPKn/Pendidikan Pancasila dan Kewarganegaraan.webp'
 
 
-function TentangProdi(){
+function TentangProdiID(){
     return(
         <>
             <div className="upper">
@@ -78,4 +76,4 @@ negara kesatuan Republik Indonesia.
     
 }
 
-export default TentangProdi
+export default TentangProdiID

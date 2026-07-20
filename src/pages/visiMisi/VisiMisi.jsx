@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/VisiMisi.css";
+import "../css/VisiMisi.css";
 
 const VisiMisi = () => {
   return (

@@ -1,8 +1,8 @@
 import React from "react";
 import { useParams, Navigate } from "react-router-dom";
-import { dataDosenID } from "../data/dosen-id";
-import { dataDosenEN } from "../data/dosen-en";
-import CardDosen from "../components/CardDosen";
+import { dataDosenID } from "../../data/dosen-id";
+import { dataDosenEN } from "../../data/dosen-en";
+import CardDosen from "../../components/CardDosen";
 
 function DaftarDosen() {
   const { lang } = useParams();
