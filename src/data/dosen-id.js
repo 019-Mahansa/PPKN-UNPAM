@@ -17,7 +17,7 @@ export const dataDosenID = [
     pendidikan: { magister: "-", doktor: "Manajemen Pendidikan" },
     keahlian: "Politik dan Kenegaraan",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/5Eap4e-wD2pYjU13lUVx1mjSSRT01DVHuLpRiQ9TuPqBUReRsAiq8gNwJauM9WW1Y3Sk9w==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/b7FqcNzGnFz2KcA70syliURC8KdwgkhmZg27NNKddzB9yCX7qtGmv5-s3zj-qcKlrVxElA==",
   },
   {
     id: 3,
@@ -47,7 +47,7 @@ export const dataDosenID = [
     pendidikan: { magister: "Ilmu Hukum", doktor: "-" },
     keahlian: "Hukum dan PKn",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/RlkevAoiW7zKYfH0nHRa1boc_o_vhBBCoMo-aiAspa7ANnPru_kggerzqQVhr_iUiZDSxA==",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/xobNgr1Ago9BuXDUe9QXuJ562ffRQolBOPTT18ot-blE301YIbqMOVJHgDx454HKMQDPMg==",
   },
   {
     id: 6,
