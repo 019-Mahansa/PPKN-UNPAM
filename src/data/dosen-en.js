@@ -2,8 +2,8 @@ export const dataDosenEN = [
   {
     id: 1,
     nama: "Dr. Ichwani Siti Utami, S.Pd. M.H",
-    nidn: "413018901",
-
+    nidn: "0413018901",
+    nuptk: "2445767668237022",
     pendidikan: { magister: "Legal Studies", doktor: "Educational Management" },
     keahlian: "Law and Civics",
     pddikti:
@@ -12,7 +12,8 @@ export const dataDosenEN = [
   {
     id: 2,
     nama: "Dr. Sugiyanto, S.Ip",
-    nidn: "403106403",
+    nidn: "0403106403",
+    nuptk: "9335742643130073",
     pendidikan: { magister: "-", doktor: "Educational Management" },
     keahlian: "Politics and Statecraft",
     pddikti:
@@ -21,7 +22,8 @@ export const dataDosenEN = [
   {
     id: 3,
     nama: "Roni Rustandi, S.Pd., M.H",
-    nidn: "431088803",
+    nidn: "0431088803",
+    nuptk: "3163766667130273",
     pendidikan: { magister: "Legal Studies", doktor: "-" },
     keahlian: "Education",
     pddikti:
@@ -30,7 +32,8 @@ export const dataDosenEN = [
   {
     id: 4,
     nama: "Aulia Nursyifa, S.Pd., M.Pd",
-    nidn: "417079201",
+    nidn: "0417079201",
+    nuptk: "-",
     pendidikan: { magister: "Sociology Education", doktor: "-" },
     keahlian: "Social Sciences",
     pddikti:
@@ -39,7 +42,8 @@ export const dataDosenEN = [
   {
     id: 5,
     nama: "Nurdiyana, S.Pd., M.H",
-    nidn: "416018202",
+    nidn: "0416018202",
+    nuptk: "6448760661230150",
     pendidikan: { magister: "Legal Studies", doktor: "-" },
     keahlian: "Law and Civics",
     pddikti:
@@ -48,7 +52,8 @@ export const dataDosenEN = [
   {
     id: 6,
     nama: "Dr. Herdi Wisman Jaya, S.Pd, M.H",
-    nidn: "410082203",
+    nidn: "0410088203",
+    nuptk: "2142760661130300",
     pendidikan: { magister: "Legal Studies", doktor: "Educational Management" },
     keahlian: "Law",
     pddikti:
@@ -57,7 +62,8 @@ export const dataDosenEN = [
   {
     id: 7,
     nama: "Eti Hayati, S.Pd. M.Pd",
-    nidn: "414038402",
+    nidn: "0414038402",
+    nuptk: "1646762663300100",
     pendidikan: { magister: "Indonesian Language Education", doktor: "-" },
     keahlian: "Education",
     pddikti:
@@ -67,6 +73,7 @@ export const dataDosenEN = [
     id: 8,
     nama: "Abd. Chaidir Marasabessy, M.Pd",
     nidn: "1228077002",
+    nuptk: "4060748649130103",
     pendidikan: { magister: "Law and Citizenship", doktor: "-" },
     keahlian: "Pancasila and Civic Education",
     pddikti:
@@ -75,7 +82,8 @@ export const dataDosenEN = [
   {
     id: 9,
     nama: "Dr. Ahmad Nana Mahmur, M.Pd",
-    nidn: "430106001",
+    nidn: "0430106001",
+    nuptk: "09071800054211",
     pendidikan: {
       magister: "Educational Research and Evaluation",
       doktor: "Educational Sciences",
@@ -88,6 +96,7 @@ export const dataDosenEN = [
     id: 10,
     nama: "Dr. R. Dede Siswandi, S.Sos., M.Pd",
     nidn: "8847200016",
+    nuptk: "1050745647200040",
     pendidikan: {
       magister: "Educational Research and Evaluation",
       doktor: "Educational Management",
@@ -99,7 +108,8 @@ export const dataDosenEN = [
   {
     id: 11,
     nama: "Setiawati, S.Pd., M.H",
-    nidn: "416089002",
+    nidn: "0416089002",
+    nuptk: "0148768669210043",
     pendidikan: { magister: "Legal Studies", doktor: "-" },
     keahlian: "Law",
     pddikti:
@@ -107,20 +117,22 @@ export const dataDosenEN = [
   },
   {
     id: 12,
-    nama: "Dr. Mas Fierma Janvierna L.P, M.Pd",
-    nidn: "416017705",
+    nama: "Dr. Mas Fierna Janvierna L. P, S.Pd., M.Pd",
+    nidn: "0416017705",
+    nuptk: "2448755656230090",
     pendidikan: {
       magister: "Pancasila and Civic Education",
-      doktor: "Pancasila and Civic Education",
+      doktor: "Civic Education",
     },
-    keahlian: "Civic Education",
+    keahlian: "Pancasila and Civic Education",
     pddikti:
       "https://pddikti.kemdiktisaintek.go.id/detail-dosen/GTDaYctnF0CfPSKkTJ86IlZcXwmbMf3ptV6VyO64VETPPuYqRV8LS3EOY0EOkQkRcDH0sA==",
   },
   {
     id: 13,
     nama: "Hendri, S.Pd., M.Pd",
-    nidn: "427038803",
+    nidn: "0427038803",
+    nuptk: "6659766667130270",
     pendidikan: { magister: "Civic Education", doktor: "-" },
     keahlian: "Civic Education",
     pddikti:
@@ -130,6 +142,7 @@ export const dataDosenEN = [
     id: 14,
     nama: "Dr. Yatti Rosmiati, M.Pd",
     nidn: "8995420021",
+    nuptk: "5743739640237060",
     pendidikan: {
       magister: "Social Studies Education (Civics Concentration)",
       doktor: "Social Studies Education (Civics Concentration)",
@@ -141,7 +154,8 @@ export const dataDosenEN = [
   {
     id: 15,
     nama: "Dewi Purnama Sari, M.Pd",
-    nidn: "419069002",
+    nidn: "0419069002",
+    nuptk: "5951768669230262",
     pendidikan: {
       magister: "Educational Administration Management",
       doktor: "-",
@@ -154,6 +168,7 @@ export const dataDosenEN = [
     id: 16,
     nama: "Heri Kurnia, S.Pd., M.Pd",
     nidn: "9990613986",
+    nuptk: "6056769670130323",
     pendidikan: { magister: "Social Studies Education", doktor: "-" },
     keahlian: "Social Sciences",
     pddikti:
@@ -162,7 +177,8 @@ export const dataDosenEN = [
   {
     id: 17,
     nama: "Dr. Aeng Muhidin, S.Pd., M.Pd",
-    nidn: "421108203",
+    nidn: "0421108203",
+    nuptk: "6353760661130170",
     pendidikan: { magister: "History", doktor: "Educational Technology" },
     keahlian: "Education",
     pddikti:
@@ -171,7 +187,8 @@ export const dataDosenEN = [
   {
     id: 18,
     nama: "Endang Prastini, S.Pd., M.H",
-    nidn: "430126802",
+    nidn: "0430126802",
+    nuptk: "3562746646300003",
     pendidikan: { magister: "Law", doktor: "-" },
     keahlian: "Law",
     pddikti:
@@ -180,7 +197,8 @@ export const dataDosenEN = [
   {
     id: 19,
     nama: "Abi Robian, S.Pd, M.H",
-    nidn: "404098603",
+    nidn: "0404098603",
+    nuptk: "7236764665130250",
     pendidikan: { magister: "Law", doktor: "-" },
     keahlian: "Law",
     pddikti:
@@ -189,7 +207,8 @@ export const dataDosenEN = [
   {
     id: 20,
     nama: "Amrizal Siagian, S.Hum., M.Si.",
-    nidn: "406017703",
+    nidn: "0406017703",
+    nuptk: "9438755656130102",
     pendidikan: { magister: "Sciences", doktor: "-" },
     keahlian: "Social Sciences",
     pddikti:
@@ -198,7 +217,8 @@ export const dataDosenEN = [
   {
     id: 21,
     nama: "Dini Handayani, S.Pd., M.H",
-    nidn: "402018807",
+    nidn: "0402018807",
+    nuptk: "5434766667237030",
     pendidikan: { magister: "Law", doktor: "-" },
     keahlian: "Law",
     pddikti:
@@ -207,7 +227,8 @@ export const dataDosenEN = [
   {
     id: 22,
     nama: "Saepudin Karta Sasmita, S.Pd., M.Pd",
-    nidn: "418099003",
+    nidn: "0418099003",
+    nuptk: "3250768669130300",
     pendidikan: { magister: "Civic Education", doktor: "-" },
     keahlian: "Pancasila and Civic Education",
     pddikti:
@@ -216,7 +237,8 @@ export const dataDosenEN = [
   {
     id: 23,
     nama: "Darto Wahidin, S.Pd., M.Sc",
-    nidn: "404119303",
+    nidn: "0404119303",
+    nuptk: "2436771672130270",
     pendidikan: { magister: "National Resilience", doktor: "-" },
     keahlian: "Social Sciences",
     pddikti:
@@ -225,7 +247,8 @@ export const dataDosenEN = [
   {
     id: 24,
     nama: "Lathifah Sandra Devi, S.Pd., M.Pd",
-    nidn: "416019701",
+    nidn: "0416019701",
+    nuptk: "8448775676230130",
     pendidikan: {
       magister: "Pancasila and Civic Education",
       doktor: "-",
@@ -237,7 +260,8 @@ export const dataDosenEN = [
   {
     id: 25,
     nama: "Eka Setiana, S.Pd., M.H",
-    nidn: "418109304",
+    nidn: "0418109304",
+    nuptk: "9350771672230270",
     pendidikan: { magister: "Law", doktor: "-" },
     keahlian: "Law",
     pddikti:
@@ -246,7 +270,8 @@ export const dataDosenEN = [
   {
     id: 26,
     nama: "Raistin Nur Abidin, S.Pd., M.Pd",
-    nidn: "403069206",
+    nidn: "0403069206",
+    nuptk: "7935770671230320",
     pendidikan: {
       magister: "Pancasila and Civic Education",
       doktor: "-",
@@ -258,7 +283,8 @@ export const dataDosenEN = [
   {
     id: 27,
     nama: "Susi, M.Pd",
-    nidn: "405047904",
+    nidn: "0405047904",
+    nuptk: "9737757658230172",
     pendidikan: {
       magister: "Pancasila and Civic Education",
       doktor: "-",
@@ -270,7 +296,8 @@ export const dataDosenEN = [
   {
     id: 28,
     nama: "Muhammad Suheppy, S.Pd., M.Pd",
-    nidn: "413057405",
+    nidn: "0413057405",
+    nuptk: "9845752653130092",
     pendidikan: { magister: "English Language Education", doktor: "-" },
     keahlian: "Education",
     pddikti:
@@ -279,7 +306,8 @@ export const dataDosenEN = [
   {
     id: 29,
     nama: "Nurullita Sari, S.Pd., MH",
-    nidn: "409079201",
+    nidn: "0409079201",
+    nuptk: "4041770671230320",
     pendidikan: { magister: "Law", doktor: "-" },
     keahlian: "Law",
     pddikti:
@@ -289,6 +317,7 @@ export const dataDosenEN = [
     id: 30,
     nama: "Yayuk Muji Rahayu, M.Pd",
     nidn: "-",
+    nuptk: "0159747648230113",
     pendidikan: { magister: "Social Studies Education", doktor: "-" },
     keahlian: "Social Sciences",
     pddikti:
@@ -298,6 +327,7 @@ export const dataDosenEN = [
     id: 31,
     nama: "Ruli Hardi, S.Pd., M.Pd",
     nidn: "8875200016",
+    nuptk: "17577606602000002",
     pendidikan: { magister: "Instructional Technology", doktor: "-" },
     keahlian: "Education",
     pddikti:
@@ -307,6 +337,7 @@ export const dataDosenEN = [
     id: 32,
     nama: "M. Finandar, S.Pd., M.Pd",
     nidn: "-",
+    nuptk: "233576667130113",
     pendidikan: { magister: "Educational Technology", doktor: "-" },
     keahlian: "Education",
     pddikti:
@@ -314,8 +345,9 @@ export const dataDosenEN = [
   },
   {
     id: 33,
-    nama: "Ivana Aprilia Herliyanikova, M.H",
+    nama: "Ivana Aprillia Harlyanikova, M.H",
     nidn: "-",
+    nuptk: "3758775676230190",
     pendidikan: { magister: "Law", doktor: "-" },
     keahlian: "Law",
     pddikti:
@@ -325,6 +357,7 @@ export const dataDosenEN = [
     id: 34,
     nama: "Supandri, M.H",
     nidn: "-",
+    nuptk: "0344770671130163",
     pendidikan: { magister: "Law", doktor: "-" },
     keahlian: "Law",
     pddikti:
@@ -333,7 +366,8 @@ export const dataDosenEN = [
   {
     id: 35,
     nama: "Suanto, S.Pd., M.H",
-    nidn: "427108902",
+    nidn: "0427108902",
+    nuptk: "5359767668131030",
     pendidikan: { magister: "Law", doktor: "-" },
     keahlian: "Law",
     pddikti:
@@ -342,10 +376,38 @@ export const dataDosenEN = [
   {
     id: 36,
     nama: "Sulastri, S.Pd., M.H",
-    nidn: "417029001",
+    nidn: "0417029001",
+    nuptk: "2549768669230260",
     pendidikan: { magister: "Law", doktor: "-" },
     keahlian: "Law",
     pddikti:
       "https://pddikti.kemdiktisaintek.go.id/detail-dosen/YYj2DmOU2uRj-2EhGWXFozrHWghCE0X0WEhCIdxxqHugzMrCTwDrh2XFGgrelUzDyngnvQ==",
+  },
+  {
+    id: 37,
+    nama: "Lina Marlina, S.Pd., M.Pd",
+    nidn: "0421038901",
+    nuptk: "1653767668231092",
+    pendidikan: { magister: "-", doktor: "-" },
+    keahlian: "-",
+    pddikti: "-",
+  },
+  {
+    id: 38,
+    nama: "Dr. Akhirudin, M.Pd",
+    nidn: "-",
+    nuptk: "-",
+    pendidikan: { magister: "-", doktor: "-" },
+    keahlian: "-",
+    pddikti: "-",
+  },
+  {
+    id: 39,
+    nama: "Dr. Neng Nurhemah. M.Pd",
+    nidn: "-",
+    nuptk: "-",
+    pendidikan: { magister: "-", doktor: "-" },
+    keahlian: "-",
+    pddikti: "-",
   },
 ];

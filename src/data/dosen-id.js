@@ -217,7 +217,7 @@ export const dataDosenID = [
     nidn: "0402018807",
     nuptk: "5434766667237030",
     pendidikan: { magister: "Hukum", doktor: "-" },
-    keahlian: "Hukum",
+    keahlian: "Ilmu Hukum",
     pddikti:
       "https://pddikti.kemdiktisaintek.go.id/detail-dosen/iG21SfNUeDJ2sUVAyn6ZdF54hn4ye-0fIYaPWeSpKcExjX6aWzFZZu_t9RjPljDnzfHmMw==",
   },
