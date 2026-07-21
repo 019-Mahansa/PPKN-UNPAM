@@ -1,7 +1,7 @@
 // Mapping foto dosen. Jika tidak ada, fallback ke icon.jpeg.
 // Import gambar di sini agar Vite bisa membundle dan hashing nama file.
-import icon from "../assets/imageDosen/icon.jpeg";
-import ichwani from "../assets/1.png";
+import icon from "../assets/icon.png";
+import ichwani from "../assets/imageDosen/Ichwani.jpg";
 import sugiyanto from "../assets/imageDosen/Sugiyanto.jpg";
 import roni from "../assets/imageDosen/Roni_Rustandi.jpg";
 import herdi from "../assets/imageDosen/herdi_wisman_jaya.jpg";
@@ -24,6 +24,10 @@ import nurullita from "../assets/imageDosen/Nurrullita.jpg";
 import yayuk from "../assets/imageDosen/Yayuk_Muji_Rahayu.jpg";
 import ivana from "../assets/imageDosen/Ivana_Aprilliana-.jpg";
 import suanto from "../assets/imageDosen/Suanto.jpg";
+import etiHayati from "../assets/imageDosen/eti hayati.png";
+import sulastri from "../assets/imageDosen/Sultastri.png";
+import Supandri from "../assets/imageDosen/Supandri, S.H, M.H.png";
+import Nurdiyana from "../assets/imageDosen/nurdiyana.jpg"
 
 // key = id dosen, value = import foto
 const fotoMap = {
@@ -31,9 +35,9 @@ const fotoMap = {
   2: sugiyanto,
   3: roni,
   4: icon, // Aulia -> icon
-  5: icon, // Nurdiyana -> icon
+  5: Nurdiyana, // Nurdiyana 
   6: herdi,
-  7: icon, // Eti Hayati -> icon
+  7: etiHayati, // Eti Hayati -> icon
   8: icon, // Abd. Chaidir -> icon
   9: ahmadNana,
   10: dedeSiswandi,
@@ -60,9 +64,9 @@ const fotoMap = {
   31: icon, // Ruli Hardi -> icon
   32: icon, // M. Finandar -> icon
   33: ivana,
-  34: icon, // Supandri -> icon
+  34: Supandri, 
   35: suanto,
-  36: icon, // Sulastri -> icon
+  36: sulastri, 
 };
 
 export function getFotoDosen(id) {

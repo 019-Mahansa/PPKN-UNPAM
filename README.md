@@ -1,16 +1,23 @@
-# React + Vite
+# UNPAM WEBSITE PRODI PPKN
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## KEYWORD PAGES BASED ON VERCEL URL
 
-Currently, two official plugins are available:
+pages visi misi
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```
+/visi-misi
+```
 
-## React Compiler
+pages daftar dosen bahasa indonesia
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```
+/dosen/id
+```
 
-## Expanding the ESLint configuration
+pages daftar dosen bahasa inggris
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+/dosen/en
+```
+
+*Visit orignal website at https://ppkn.unpam.ac.id*

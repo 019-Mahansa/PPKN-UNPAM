@@ -12,7 +12,10 @@ export default function CardDosen({ dosen, lang }) {
 
       <div className="card-header">
         <h3>{dosen.nama}</h3>
-        <p className="nidn">NIDN: {dosen.nidn}</p>
+        <div className="id-wrap">
+          <p>NIDN: {dosen.nidn}</p>
+          <p>NUPTK: {dosen.nuptk}</p>
+        </div>
       </div>
 
       <div className="card-body">
