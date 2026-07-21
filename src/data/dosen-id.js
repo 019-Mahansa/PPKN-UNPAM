@@ -106,11 +106,11 @@ export const dataDosenID = [
   },
   {
     id: 12,
-    nama: "Dr Mas Fierma Janvierna L P, S.Pd., M.Pd",
+    nama: "Dr. Mas Fierma Janvierna L.P, M.Pd",
     nidn: "416017705",
     pendidikan: {
       magister: "Pendidikan Pancasila dan Kewarganegaraan",
-      doktor: "Pendidikan Pancasila dan Kewarganegaraan",
+      doktor: "Pendidikan Kewarganegaraan",
     },
     keahlian: "Pendidikan Pancasila dan Kewarganegaraan",
     pddikti:
@@ -196,7 +196,7 @@ export const dataDosenID = [
     nama: "Dini Handayani, S.Pd., M.H",
     nidn: "402018807",
     pendidikan: { magister: "Hukum", doktor: "-" },
-    keahlian: "Hukum",
+    keahlian: "Ilmu Hukum",
     pddikti:
       "https://pddikti.kemdiktisaintek.go.id/detail-dosen/iG21SfNUeDJ2sUVAyn6ZdF54hn4ye-0fIYaPWeSpKcExjX6aWzFZZu_t9RjPljDnzfHmMw==",
   },

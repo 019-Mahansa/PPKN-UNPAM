@@ -27,6 +27,7 @@ import suanto from "../assets/imageDosen/Suanto.jpg";
 import etiHayati from "../assets/imageDosen/eti hayati.png";
 import sulastri from "../assets/imageDosen/Sultastri.png";
 import Supandri from "../assets/imageDosen/Supandri, S.H, M.H.png";
+import Nurdiyana from "../assets/imageDosen/nurdiyana.jpg"
 
 // key = id dosen, value = import foto
 const fotoMap = {
@@ -34,7 +35,7 @@ const fotoMap = {
   2: sugiyanto,
   3: roni,
   4: icon, // Aulia -> icon
-  5: icon, // Nurdiyana -> icon
+  5: Nurdiyana, // Nurdiyana 
   6: herdi,
   7: etiHayati, // Eti Hayati -> icon
   8: icon, // Abd. Chaidir -> icon

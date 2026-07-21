@@ -3,6 +3,7 @@ export const dataDosenEN = [
     id: 1,
     nama: "Dr. Ichwani Siti Utami, S.Pd. M.H",
     nidn: "413018901",
+
     pendidikan: { magister: "Legal Studies", doktor: "Educational Management" },
     keahlian: "Law and Civics",
     pddikti:
@@ -106,13 +107,13 @@ export const dataDosenEN = [
   },
   {
     id: 12,
-    nama: "Dr. Mas Fierma Janvierna L P, S.Pd., M.Pd",
+    nama: "Dr. Mas Fierma Janvierna L.P, M.Pd",
     nidn: "416017705",
     pendidikan: {
       magister: "Pancasila and Civic Education",
       doktor: "Pancasila and Civic Education",
     },
-    keahlian: "Pancasila and Civic Education",
+    keahlian: "Civic Education",
     pddikti:
       "https://pddikti.kemdiktisaintek.go.id/detail-dosen/GTDaYctnF0CfPSKkTJ86IlZcXwmbMf3ptV6VyO64VETPPuYqRV8LS3EOY0EOkQkRcDH0sA==",
   },
