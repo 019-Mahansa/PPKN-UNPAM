@@ -25,7 +25,7 @@ export const dataDosenEN = [
     nidn: "0431088803",
     nuptk: "3163766667130273",
     pendidikan: { magister: "Legal Studies", doktor: "-" },
-    keahlian: "Education",
+    keahlian: "Law",
     pddikti:
       "https://pddikti.kemdiktisaintek.go.id/detail-dosen/uPXdPN0kthYgIjRy9hXTULRylOQZoVNEs7p5x5ZGBfP4eSS3lIJZcXqkpZ7JJk8J6Zlp2g==",
   },
