@@ -1,32 +1,30 @@
-import React, { useEffect, useState, useCallback, useRef } from "react";
+import React from "react";
 import { useParams, Navigate } from "react-router-dom";
 import { dataDosenID } from "../../data/dosen-id";
 import { dataDosenEN } from "../../data/dosen-en";
 import CardDosen from "../../components/CardDosen";
 
 function DaftarDosen() {
-  useEffect(() => {
-  const script = document.createElement('script');
-  script.src = 'https://cdn.jsdelivr.net/npm/iframe-resizer@4.6.1/js/iframeResizer.contentWindow.min.js';
-  script.async = true;
-  document.body.appendChild(script);
+  const { lang } = useParams();
 
-  script.onload = () => {
-    // Sekarang window.parentIFrame tersedia
-    if (window.parentIFrame) {
-      window.parentIFrame.size();
-    }
-  };
+  if (lang !== "id" && lang !== "en") {
+    return <Navigate to="/dosen/id" replace />;
+  }
 
-  return () => {
-    document.body.removeChild(script);
-  };
-}, []);
+  const currentData = lang === "id" ? dataDosenID : dataDosenEN;
+  // const title =
+  //   lang === "id"
+  //     ? "Daftar Dosen Prodi PPKn"
+  //     : "Civics Education Lecturers List";
 
   return (
-    <div className="app-container" >
+    <div className="app-container">
+      {/* <h1 className="title" style={{ textAlign: "center", margin: "2rem 0" }}>
+        {title}
+      </h1> */}
+
       <div className="grid-dosen">
-        {data.map((dosen) => (
+        {currentData.map((dosen) => (
           <CardDosen key={dosen.id} dosen={dosen} lang={lang} />
         ))}
       </div>
