@@ -7,18 +7,15 @@ import { useEffect } from 'react';
 
 function DaftarDosen() {
   
-    useEffect(() => {
-      const kirimTinggi = () => {
-        const tinggi = document.documentElement.scrollHeight;
-        window.parent.postMessage({ tinggi: tinggi }, '*');
-      };
-
-
-      kirimTinggi();
-      window.addEventListener('resize', kirimTinggi);
-
-      return () => window.removeEventListener('resize', kirimTinggi);
-    }, []); 
+useEffect(() => {
+  // Setelah render, kirim tinggi
+  const kirim = () => {
+    window.parent.postMessage({ tinggi: document.documentElement.scrollHeight }, '*');
+  };
+  kirim();
+  window.addEventListener('resize', kirim);
+  return () => window.removeEventListener('resize', kirim);
+}, [data]); // kalau data adalah state yang sudah terisi
 
   const { lang } = useParams();
 
