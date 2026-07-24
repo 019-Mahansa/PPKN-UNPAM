@@ -3,8 +3,23 @@ import { useParams, Navigate } from "react-router-dom";
 import { dataDosenID } from "../../data/dosen-id";
 import { dataDosenEN } from "../../data/dosen-en";
 import CardDosen from "../../components/CardDosen";
+import { useEffect } from 'react';
 
 function DaftarDosen() {
+  
+    useEffect(() => {
+      const kirimTinggi = () => {
+        const tinggi = document.documentElement.scrollHeight;
+        window.parent.postMessage({ tinggi: tinggi }, '*');
+      };
+
+
+      kirimTinggi();
+      window.addEventListener('resize', kirimTinggi);
+
+      return () => window.removeEventListener('resize', kirimTinggi);
+    }, []); 
+
   const { lang } = useParams();
 
   if (lang !== "id" && lang !== "en") {
