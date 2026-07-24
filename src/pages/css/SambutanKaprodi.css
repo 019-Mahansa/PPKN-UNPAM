@@ -1,0 +1,121 @@
+/* Sambutan Kaprodi — minimalis putih & hitam, layout terpusat */
+.sambutan-kaprodi {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem 6rem;
+  background-color: #ffffff;
+  color: #0a0a0a;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* ---------- Header ---------- */
+.sambutan-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.sambutan-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #525252;
+  margin: 0 0 0.75rem;
+}
+
+.sambutan-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #0a0a0a;
+  letter-spacing: -0.02em;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.sambutan-divider {
+  width: 4rem;
+  height: 3px;
+  background-color: #0a0a0a;
+  margin: 1.25rem auto 0;
+  border-radius: 9999px;
+}
+
+/* ---------- Photo block ---------- */
+.sambutan-photo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.sambutan-photo {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .sambutan-photo {
+    max-width: 440px;
+  }
+}
+
+/* ---------- Identity ---------- */
+.sambutan-identity {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.sambutan-name {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0a0a0a;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+.sambutan-role {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #0a0a0a;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  padding: 0.5rem 1.25rem;
+  border: 1.5px solid #0a0a0a;
+  border-radius: 9999px;
+}
+
+/* ---------- Paragraphs ---------- */
+.sambutan-paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  border-top: 1.5px solid #0a0a0a;
+  padding-top: 2rem;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.sambutan-paragraph {
+  font-size: 1.0625rem;
+  line-height: 1.85;
+  color: #171717;
+  margin: 0;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.sambutan-paragraph--lead {
+  font-weight: 600;
+  color: #0a0a0a;
+}
+
+.sambutan-paragraph--closing {
+  text-align: right;
+  font-style: italic;
+  font-weight: 500;
+  color: #0a0a0a;
+  margin-top: 0.5rem;
+}
