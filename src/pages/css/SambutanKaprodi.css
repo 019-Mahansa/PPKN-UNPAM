@@ -32,6 +32,7 @@
   line-height: 1.2;
 }
 
+
 .sambutan-divider {
   width: 4rem;
   height: 3px;
@@ -39,6 +40,7 @@
   margin: 1.25rem auto 0;
   border-radius: 9999px;
 }
+
 
 /* ---------- Photo block ---------- */
 .sambutan-photo-wrapper {
@@ -74,7 +76,10 @@
   letter-spacing: -0.01em;
 }
 
+
+/*transisi bos*/
 .sambutan-role {
+  position: relative;
   display: inline-block;
   font-size: 0.85rem;
   font-weight: 600;
@@ -85,6 +90,32 @@
   padding: 0.5rem 1.25rem;
   border: 1.5px solid #0a0a0a;
   border-radius: 9999px;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 0;
+  isolation: isolate;
+  transition: color 0.4s ease, border-color 0.4s ease;
+}
+
+.sambutan-role::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #550000;
+  transition: width 0.4s ease;
+  z-index: -1;
+}
+
+.sambutan-role:hover {
+  color: #ffffff;
+  border-color: #550000;
+}
+
+.sambutan-role:hover::before {
+  width: 100%;
 }
 
 /* ---------- Paragraphs ---------- */
