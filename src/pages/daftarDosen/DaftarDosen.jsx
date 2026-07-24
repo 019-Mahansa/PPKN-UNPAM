@@ -3,19 +3,37 @@ import { useParams, Navigate } from "react-router-dom";
 import { dataDosenID } from "../../data/dosen-id";
 import { dataDosenEN } from "../../data/dosen-en";
 import CardDosen from "../../components/CardDosen";
-import { useEffect } from 'react';
+import { useEffect, useState, useCallback } from 'react'
 
 function DaftarDosen() {
   
-  useEffect(() => {
-    // Setelah render, kirim tinggi
-    const kirim = () => {
-      window.parent.postMessage({ tinggi: document.documentElement.scrollHeight }, '*');
-    };
-    kirim();
-    window.addEventListener('resize', kirim);
-    return () => window.removeEventListener('resize', kirim);
-  }, [data]); // kalau data adalah state yang sudah terisi
+    const [data, setData] = useState(null);
+
+    // Fungsi untuk mengirim tinggi ke parent (hanya jika ada parent)
+    const kirimTinggi = useCallback(() => {
+      if (window.parent !== window) {  // cek apakah berada di dalam iframe
+        const tinggi = document.documentElement.scrollHeight;
+        window.parent.postMessage({ tinggi }, '*');
+      }
+    }, []);
+
+    useEffect(() => {
+      // Ambil data dari API
+      fetch('/api/dosen/id')  // sesuaikan endpoint
+        .then(res => res.json())
+        .then(hasil => setData(hasil));
+    }, []);
+
+    // Kirim tinggi SETELAH data tampil (render selesai)
+    useEffect(() => {
+      kirimTinggi();
+    }, [data, kirimTinggi]);
+
+    // Kirim tinggi setiap kali window di-resize
+    useEffect(() => {
+      window.addEventListener('resize', kirimTinggi);
+      return () => window.removeEventListener('resize', kirimTinggi);
+    }, [kirimTinggi]);
 
   const { lang } = useParams();
 
