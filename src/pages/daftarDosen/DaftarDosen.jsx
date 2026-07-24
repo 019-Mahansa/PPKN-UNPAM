@@ -1,60 +1,65 @@
-import React from "react";
+import React, { useEffect, useState, useCallback, useRef } from "react";
 import { useParams, Navigate } from "react-router-dom";
 import { dataDosenID } from "../../data/dosen-id";
 import { dataDosenEN } from "../../data/dosen-en";
 import CardDosen from "../../components/CardDosen";
-import { useEffect, useState, useCallback } from 'react'
 
 function DaftarDosen() {
-  
-    const [data, setData] = useState(null);
-
-    // Fungsi untuk mengirim tinggi ke parent (hanya jika ada parent)
-    const kirimTinggi = useCallback(() => {
-      if (window.parent !== window) {  // cek apakah berada di dalam iframe
-        const tinggi = document.documentElement.scrollHeight;
-        window.parent.postMessage({ tinggi }, '*');
-      }
-    }, []);
-
-    useEffect(() => {
-      // Ambil data dari API
-      fetch('/api/dosen/id')  // sesuaikan endpoint
-        .then(res => res.json())
-        .then(hasil => setData(hasil));
-    }, []);
-
-    // Kirim tinggi SETELAH data tampil (render selesai)
-    useEffect(() => {
-      kirimTinggi();
-    }, [data, kirimTinggi]);
-
-    // Kirim tinggi setiap kali window di-resize
-    useEffect(() => {
-      window.addEventListener('resize', kirimTinggi);
-      return () => window.removeEventListener('resize', kirimTinggi);
-    }, [kirimTinggi]);
-
   const { lang } = useParams();
+  const containerRef = useRef(null);
+  const [data, setData] = useState(null);
 
-  if (lang !== "id" && lang !== "en") {
-    return <Navigate to="/dosen/id" replace />;
-  }
+  const kirimTinggi = useCallback(() => {
+    const tinggi = document.documentElement.scrollHeight;
+    if (window.parent !== window) {
+      window.parent.postMessage({ tinggi }, "*");
+    }
+  }, []);
 
-  const currentData = lang === "id" ? dataDosenID : dataDosenEN;
-  // const title =
-  //   lang === "id"
-  //     ? "Daftar Dosen Prodi PPKn"
-  //     : "Civics Education Lecturers List";
+  useEffect(() => {
+    try {
+      const currentData = lang === "en" ? dataDosenEN : dataDosenID;
+      setData(currentData);
+    } catch (err) {
+      console.error(err);
+    }
+  }, [lang]);
+
+  useEffect(() => {
+    if (data) {
+      requestAnimationFrame(() => requestAnimationFrame(kirimTinggi));
+    }
+  }, [data, kirimTinggi]);
+
+  useEffect(() => {
+    if (!containerRef.current) return;
+    const resizeObserver = new ResizeObserver(kirimTinggi);
+    resizeObserver.observe(containerRef.current);
+
+    const mutationObserver = new MutationObserver(kirimTinggi);
+    mutationObserver.observe(containerRef.current, {
+      childList: true,
+      subtree: true,
+      attributes: true,
+    });
+
+    window.addEventListener("load", kirimTinggi);
+    window.addEventListener("resize", kirimTinggi);
+
+    return () => {
+      resizeObserver.disconnect();
+      mutationObserver.disconnect();
+      window.removeEventListener("load", kirimTinggi);
+      window.removeEventListener("resize", kirimTinggi);
+    };
+  }, [kirimTinggi]);
+
+  if (!data) return <p>Memuat...</p>;
 
   return (
-    <div className="app-container">
-      {/* <h1 className="title" style={{ textAlign: "center", margin: "2rem 0" }}>
-        {title}
-      </h1> */}
-
+    <div className="app-container" ref={containerRef}>
       <div className="grid-dosen">
-        {currentData.map((dosen) => (
+        {data.map((dosen) => (
           <CardDosen key={dosen.id} dosen={dosen} lang={lang} />
         ))}
       </div>
