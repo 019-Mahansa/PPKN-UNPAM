@@ -1,0 +1,68 @@
+.card-prestasi-mahasiswa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F2EBEB;
+    border: 1px solid #BEA5A5;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    
+}
+
+.card-prestasi-mahasiswa img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.prestasiInfo{  
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.kotakInfoPer1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CC2B2B;
+    color: white;
+    padding: 6px 10px;
+    margin: 4px;
+    border-radius: 4px;
+    font-size: 14px;
+    flex: 1;
+    text-align: center;
+}
+
+.kotakInfoPer1 h2{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.next-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7C2222;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 8px 5px;
+    cursor: pointer;
+    border-radius: 6px;
+    width: calc(100% - 10px);
+    font-size: 14px;
+}
+
+.next-info:hover{
+    background-color: #5a1818;
+}

@@ -10,6 +10,7 @@ import TentangProdiID from "./pages/tentangProdi/TentangProdi-ID";
 import TentangProdiEN from "./pages/tentangProdi/tentangProdi-EN";
 import SambutanKaprodi from "./pages/sambutanKaprodi/SambutanKaprodi";
 
+import PrestasiMahasiswa from "./pages/PrestasiMahasiswa/PrestasiMahasiwa";
 function App() {
   return (
     <div className="app-container">
@@ -27,6 +28,8 @@ function App() {
 
         <Route path="/sambutan-kaprodi" element={<SambutanKaprodi />}/>
         <Route path="/sambutan-kaprodi/:lang" element={<SambutanKaprodi />}/>
+
+        <Route path="/prestasi-mahasiswa" element={<PrestasiMahasiswa />}/>
         </Routes>
       </BrowserRouter>
     </div>
