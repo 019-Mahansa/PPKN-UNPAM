@@ -1,5 +1,5 @@
-import react from "react";
-import CardPrestasiMahawasiwa from "../../components/CardPrestasiMahasiswa";
+import React from "react";
+import CardPrestasiMahawasiwa from "../../components/CardPrestasiMahasiswa/CardPrestasiMahasiswa";
 import '../css/PrestasiMahasiswa.css';
 import GambarLomba1 from "../../assets/Selamat dan sukses.png";
 const PrestasiMahasiswa = () => {
