@@ -400,11 +400,11 @@ export const dataDosenID = [
   },
   {
     id: 39,
-    nama: "Dr. Neng Nurhemah. M.Pd",
-    nidn: "-",
+    nama: "Dr.Dra. Neng Nurhemah. M.Pd",
+    nidn: "0427076201",
     nuptk: "-",
-    pendidikan: { magister: "-", doktor: "-" },
-    keahlian: "-",
+    pendidikan: { magister: "-", doktor: "Manajemen Pendidikan" },
+    keahlian: "bidang Pendidikan",
     pddikti: "-",
   },
 ];
