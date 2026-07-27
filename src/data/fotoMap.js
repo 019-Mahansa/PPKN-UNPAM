@@ -30,6 +30,7 @@ import sulastri from "../assets/imageDosen/Sultastri.png";
 import Supandri from "../assets/imageDosen/Supandri, S.H, M.H.png";
 import linaMarlina from "../assets/imageDosen/Lina_marlina.jpg";
 import buNeng from "../assets/imageDosen/Bu_neng.jpg";
+import eka from "../assets/imageDosen/Eka_Setiana.jpg";
 
 // key = id dosen, value = import foto
 const fotoMap = {
@@ -57,7 +58,7 @@ const fotoMap = {
   22: saepudin, // Saepudin Karta Sasmita
   23: icon, // Darto -> icon
   24: lathifah, // Lathifah Sandra Devi
-  25: icon, // Eka Setiana -> icon
+  25: eka, // Eka Setiana -> icon
   26: raistin, // Raistin Nur Abidin
   27: susi, // Susi
   28: suheppy, // Muhammad Suheppy
