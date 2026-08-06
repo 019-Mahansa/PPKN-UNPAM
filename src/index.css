@@ -8,15 +8,3 @@
   /* overflow: hidden; */
 }
 
-.app-container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 20px;
-  /* margin-bottom: 90vh; */
-}
-/* 
-@media (max-width: 768px) {
-  .app-container {
-    min-height: 3000px;
-  }
-} */

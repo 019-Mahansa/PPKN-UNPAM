@@ -25,7 +25,7 @@ export const dataDosenID = [
     nidn: "0431088803",
     nuptk: "3163766667130273",
     pendidikan: { magister: "Ilmu Hukum", doktor: "-" },
-    keahlian: "Pendidikan",
+    keahlian: "Hukum",
     pddikti:
       "https://pddikti.kemdiktisaintek.go.id/detail-dosen/uPXdPN0kthYgIjRy9hXTULRylOQZoVNEs7p5x5ZGBfP4eSS3lIJZcXqkpZ7JJk8J6Zlp2g==",
   },
@@ -400,11 +400,11 @@ export const dataDosenID = [
   },
   {
     id: 39,
-    nama: "Dr. Neng Nurhemah. M.Pd",
-    nidn: "-",
+    nama: "Dr.Dra. Neng Nurhemah. M.Pd",
+    nidn: "0427076201",
     nuptk: "-",
-    pendidikan: { magister: "-", doktor: "-" },
-    keahlian: "-",
+    pendidikan: { magister: "-", doktor: "Manajemen Pendidikan" },
+    keahlian: "bidang Pendidikan",
     pddikti: "-",
   },
 ];

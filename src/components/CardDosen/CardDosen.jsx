@@ -1,5 +1,5 @@
 import React from "react";
-import { getFotoDosen } from "../data/fotoMap";
+import { getFotoDosen } from "../../data/fotoMap";
 import "./CardDosen.css";
 
 export default function CardDosen({ dosen, lang }) {
