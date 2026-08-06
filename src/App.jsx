@@ -9,6 +9,7 @@ import VisiMisi from './pages/visiMisi/VisiMisi'
 import TentangProdiID from "./pages/tentangProdi/TentangProdi-ID";
 import TentangProdiEN from "./pages/tentangProdi/tentangProdi-EN";
 import SambutanKaprodi from "./pages/sambutanKaprodi/SambutanKaprodi";
+import FaqID from "./pages/faq/FaqID";
 
 import PrestasiMahasiswa from "./pages/PrestasiMahasiswa/PrestasiMahasiwa";
 function App() {
@@ -30,6 +31,8 @@ function App() {
         <Route path="/sambutan-kaprodi/:lang" element={<SambutanKaprodi />}/>
 
         <Route path="/prestasi-mahasiswa" element={<PrestasiMahasiswa />}/>
+        <Route path="/faq/id" element={<FaqID />}/>
+        
         </Routes>
       </BrowserRouter>
     </div>
