@@ -3,8 +3,8 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import DaftarDosen from "./pages/daftarDosen/DaftarDosen";
 
-import VisiMisi from './pages/visiMisi/VisiMisi'
-
+import VisiMisiID from "./pages/visiMisi/VisiMisi-ID";
+import VisiMisiEN from "./pages/visiMisi/VisiMisi-EN";
 
 import TentangProdiID from "./pages/tentangProdi/TentangProdi-ID";
 import TentangProdiEN from "./pages/tentangProdi/tentangProdi-EN";
@@ -21,7 +21,8 @@ function App() {
         <Route path="/dosen" element={<Navigate to="/dosen/id" replace />} />
         <Route path="/dosen/:lang" element={<DaftarDosen />} />
 
-        <Route path="/visi-misi" element={<VisiMisi />}/>
+        <Route path="/visi-misi/id" element={<VisiMisiID />}/>
+        <Route path="/visi-misi/en" element={<VisiMisiEN />}/>
 
         <Route path="/tentang-prodi/id" element={<TentangProdiID />}/>
         <Route path="/tentang-prodi/en" element={<TentangProdiEN />}/>

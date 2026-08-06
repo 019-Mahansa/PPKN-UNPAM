@@ -7,6 +7,10 @@ function SambutanKaprodi() {
   const containerRef = useRef(null);
   const [data, setData] = useState(null);
 
+  const linked = () =>{
+    window.open("https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==", "_blank");
+  }
+
   const kirimTinggi = useCallback(() => {
     const tinggi = document.documentElement.scrollHeight;
     if (window.parent !== window) {
@@ -105,7 +109,9 @@ function SambutanKaprodi() {
 
       <div className="sambutan-identity">
         <h2 className="sambutan-name">{content.nama}</h2>
-        <span className="sambutan-role">{content.jabatan}</span>
+        <button className="sambutan-role" onClick={linked}>
+          {content.jabatan}
+        </button>
       </div>
 
       <div className="sambutan-paragraphs">

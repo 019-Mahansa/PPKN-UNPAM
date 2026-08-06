@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/VisiMisi.css";
 
-const VisiMisi = () => {
+const VisiMisiID = () => {
   return (
     <section className="visi-misi">
       {/* Header */}
@@ -75,4 +75,4 @@ const VisiMisi = () => {
   );
 };
 
-export default VisiMisi;
+export default VisiMisiID;

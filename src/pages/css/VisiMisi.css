@@ -1,14 +1,103 @@
+/* =========================================================
+   VISI MISI — Theme: Diagonal sweep from top-left to bottom-left
+   Background section (.visi-misi) uses an angled gradient
+   that visually flows from top-left to bottom-left, with a
+   soft accent stripe overlay for the "big line" feel.
+   ========================================================= */
+:root {
+  /* === Wine Maroon palette === */
+  --vm-bg-1: #3a0a14;   /* top (deeper wine) */
+  --vm-bg-2: #5a1424;   /* mid (classic maroon) */
+  --vm-bg-3: #2c050b;   /* bottom-left (deepest) */
+  --vm-glow: rgba(244, 191, 117, 0.20);   /* warm gold glow on stripe */
+  --vm-text: #f7e9e3;
+  --vm-text-strong: #ffffff;
+  --vm-eyebrow: #f6c89a;
+  --vm-accent: #f4bf75;                   /* soft champagne gold */
+  --vm-accent-soft: rgba(244, 191, 117, 0.18);
+  --vm-card-bg: rgba(255, 251, 247, 0.97);
+  --vm-card-text: #3a0a14;
+  --vm-card-text-soft: #5b2330;
+}
+
+/* ---------- Section with diagonal sweep background ---------- */
 .visi-misi {
+  position: relative;
   max-width: 1200px;
   margin: 0 auto;
   padding: 4rem 1.5rem;
-  background-color: #f8fafc;
-  color: #012223;
+  color: var(--vm-text);
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0 24px 60px -28px rgba(0, 0, 0, 0.55);
+
+  /* Diagonal gradient: top-left -> bottom-left */
+  background:
+    linear-gradient(
+      160deg,
+      var(--vm-bg-1) 0%,
+      var(--vm-bg-2) 55%,
+      var(--vm-bg-3) 100%
+    );
 }
 
+/* Big diagonal "outline" line from top-left to bottom-left.
+   Made with two thin oblique stripes + a soft glow.
+   It spans the full section as a decorative element. */
+.visi-misi::before {
+  content: "";
+  position: absolute;
+  left: -12%;
+  top: -10%;
+  width: 60%;
+  height: 140%;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.12) 0%,
+      rgba(255, 255, 255, 0.06) 35%,
+      rgba(255, 255, 255, 0.16) 55%,
+      rgba(255, 255, 255, 0.04) 80%,
+      rgba(255, 255, 255, 0.10) 100%
+    );
+  transform: rotate(22deg);
+  transform-origin: top left;
+  filter: blur(0.5px);
+  pointer-events: none;
+}
+
+/* Gold accent stroke on the same diagonal, thinner & sharper */
+.visi-misi::after {
+  content: "";
+  position: absolute;
+  left: -6%;
+  top: -8%;
+  width: 22%;
+  height: 130%;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    var(--vm-glow) 30%,
+    var(--vm-accent) 50%,
+    var(--vm-glow) 70%,
+    transparent 100%
+  );
+  transform: rotate(22deg);
+  transform-origin: top left;
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+/* Keep content above the decorative layer */
+.visi-misi > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------- Header ---------- */
 .visi-misi-header {
   text-align: center;
   margin-bottom: 2rem;
@@ -17,45 +106,54 @@
 .visi-misi-eyebrow {
   font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.2em;
-  color: #012223;
+  letter-spacing: 0.25em;
+  color: var(--vm-eyebrow);
   text-transform: uppercase;
 }
 
 .visi-misi-title {
   font-size: 2.25rem;
   font-weight: 800;
-  color: #0f172a;
+  color: var(--vm-text-strong);
   margin-top: 0.5rem;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
 }
 
 .visi-misi-divider {
   width: 4rem;
   height: 4px;
-  background-color: #d97706;
+  background-color: var(--vm-accent);
   margin: 1rem auto 0;
   border-radius: 9999px;
+  box-shadow: 0 0 0 4px var(--vm-accent-soft);
 }
 
+/* ---------- Visi card (kept clean so text reads well) ---------- */
 .visi-card {
-  background-color: #ffffff;
+  background-color: var(--vm-card-bg);
   padding: 2.5rem;
   border-radius: 1rem;
-  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  border: 1px solid #f1f5f9;
+  box-shadow: 0 12px 40px -12px rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.55);
   margin-bottom: 2rem;
   text-align: center;
   max-width: 48rem;
   width: 100%;
   cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.visi-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 44px -14px rgba(0, 0, 0, 0.6);
 }
 
 .visi-label {
   font-size: 1.5rem;
-  font-weight: 600;
-  color: #012223;
+  font-weight: 700;
+  color: var(--vm-card-text);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   margin-bottom: 1rem;
 }
 
@@ -73,6 +171,7 @@
   }
 }
 
+/* ---------- Misi ---------- */
 .misi-section {
   max-width: 56rem;
   width: 100%;
@@ -81,10 +180,10 @@
 
 .misi-title {
   font-size: 1.5rem;
-  font-weight: 600;
-  color: #012223;
+  font-weight: 700;
+  color: var(--vm-text-strong);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-align: center;
   margin-bottom: 1.5rem;
 }
@@ -102,33 +201,36 @@
 }
 
 .misi-card {
-  background-color: #ffffff;
+  background-color: var(--vm-card-bg);
   padding: 1.5rem;
   border-radius: 0.75rem;
-  border: 1px solid rgb(226 232 240 / 0.8);
-  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  transition: all 0.2s ease-in-out;
+  border: 1px solid rgba(13, 78, 72, 0.12);
+  box-shadow: 0 10px 30px -16px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
 }
 
 .misi-card:hover {
-  border-color: #d97706
+  border-color: var(--vm-accent);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px -16px rgba(0, 0, 0, 0.55);
 }
 
 .misi-number {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #012223;
+  color: var(--vm-accent);
   display: block;
   margin-bottom: 0.5rem;
 }
 
 .misi-text {
   font-size: 0.875rem;
-  color: #012223;
+  color: var(--vm-card-text);
   line-height: 1.7;
 }
 
+/* ---------- Tujuan ---------- */
 .tujuan-section {
   max-width: 56rem;
   width: 100%;
@@ -137,10 +239,10 @@
 
 .tujuan-title {
   font-size: 1.5rem;
-  font-weight: 600;
-  color: #012223;
+  font-weight: 700;
+  color: var(--vm-text-strong);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-align: center;
   margin-bottom: 1.5rem;
 }
@@ -158,28 +260,30 @@
 }
 
 .tujuan-card {
-  background-color: #ffffff;
+  background-color: var(--vm-card-bg);
   padding: 1.5rem;
   border-radius: 0.75rem;
-  border: 1px solid rgb(226 232 240 / 0.8);
-  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  transition: all 0.2s ease-in-out;
+  border: 1px solid rgba(13, 78, 72, 0.12);
+  box-shadow: 0 10px 30px -16px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .tujuan-card:hover {
-  border-color: #d97706;
+  border-color: var(--vm-accent);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px -16px rgba(0, 0, 0, 0.55);
 }
 
 .tujuan-number {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #012223;
+  color: var(--vm-accent);
   display: block;
   margin-bottom: 0.5rem;
 }
 
 .tujuan-text {
   font-size: 0.875rem;
-  color: #475569;
+  color: var(--vm-card-text-soft);
   line-height: 1.7;
 }
