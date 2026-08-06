@@ -8,7 +8,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 25px;
-  padding-top: 4px; /* penting biar pas 1st card di hover garis di top ga ilang */
+  padding-top: 5px; /* penting biar pas 1st card di hover garis di top ga ilang */
   align-items: stretch;
 }
 
