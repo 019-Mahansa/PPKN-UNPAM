@@ -7,7 +7,10 @@ import VisiMisiID from "./pages/visiMisi/VisiMisi-ID";
 import VisiMisiEN from "./pages/visiMisi/VisiMisi-EN";
 
 import TentangProdiID from "./pages/tentangProdi/TentangProdi-ID";
+import TentangProdiNewID from "./pages/tentangProdi/TentangProdiNew-ID";
 import TentangProdiEN from "./pages/tentangProdi/tentangProdi-EN";
+
+
 import SambutanKaprodi from "./pages/sambutanKaprodi/SambutanKaprodi";
 import FaqID from "./pages/faq/FaqID";
 
@@ -27,6 +30,7 @@ function App() {
 
         <Route path="/tentang-prodi/id" element={<TentangProdiID />}/>
         <Route path="/tentang-prodi/en" element={<TentangProdiEN />}/>
+        <Route path="/tentang-prodi/new/id" element={<TentangProdiNewID />}/>
 
         <Route path="/sambutan-kaprodi" element={<SambutanKaprodi />}/>
         <Route path="/sambutan-kaprodi/:lang" element={<SambutanKaprodi />}/>

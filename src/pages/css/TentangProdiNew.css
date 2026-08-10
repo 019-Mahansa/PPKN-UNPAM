@@ -1,0 +1,191 @@
+.tentang-prodi-new{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* padding: 20px; */
+    width: 100%;
+    min-height: 100vh;
+}
+
+.images-unpam{
+    background-image: url('../../assets/GedungdanFasilitasUNPAM/Pendidikan_Pancasila_dan_Kewarganegaraan.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    min-height: 52vh;
+    width: 100%;
+    /* border-radius: 16px; */
+    overflow: hidden;
+    color: #fff;
+    position: relative;
+}
+
+.images-unpam h1{
+    position: relative;
+    z-index: 1;
+    padding: 1.25rem 1.5rem;
+    text-align: center;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.65);
+}
+
+.content{
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.content p{
+    color: rgb(61, 61, 61);
+    text-align: center;
+    font-size: 1rem;
+}
+
+.content .btn{
+    margin-top: 5rem;
+    border: 1px solid #6b0808;
+    color: #6b0808;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.4rem;
+}
+
+.content .btn:hover{
+    background-color: #6b0808;
+    color: #fff;
+}
+
+.titlevideo{
+    margin-top: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.titlevideo h2{
+    /* color: #6b0808; */
+    font-size: 2.5rem;
+}
+
+.videocontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    border: 5px solid #6b0808;
+    border-radius: 7px;
+    /* width: 20%;
+    height: 20%; */
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.video iframe{
+    border: none;
+    border-radius: 5px;
+}
+
+.pimpinan{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 0.25rem 5rem 2rem 5rem;
+    padding: 2rem;
+    background-color: transparent;
+}
+
+/* Judul "Pimpinan Prodi": rapat ke container .pimpinan di bawahnya,
+   seolah-olah menyatu ke dalam area kiri-tengah (.left) */
+.titlevideo.title-pimpinan-prodi{
+    margin-top: 5rem;
+    margin-bottom: 0.25rem;
+}
+
+.pimpinan .left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.pimpinan .left .title-pimpinan{
+    color: #000;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.pimpinan .left .title-pimpinan:nth-of-type(2){
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.pimpinan .left .deskripsi-pimpinan{
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0.5rem 0 0 0;
+}
+
+.pimpinan .left .btn{
+    margin-top: 1rem;
+    border: 1px solid #000;
+    color: #000;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s ease;
+}
+
+.pimpinan .left .btn:hover{
+    background-color: #6b0808;
+    color: #fff;
+}
+
+.pimpinan .right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pimpinan .right img{
+    max-width: 100%;
+    max-height: 420px;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+@media (max-width: 768px){
+    .pimpinan{
+        flex-direction: column;
+        margin: 2rem 1.5rem;
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .titlevideo,
+    .title.pimpinan{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+}
