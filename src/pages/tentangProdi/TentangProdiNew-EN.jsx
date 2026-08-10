@@ -4,7 +4,10 @@ import Gambar_kaprodi from "../../assets/Bu_ichwani_with_text.png";
 export default function TentangProdiNewEN() {
   return (
     <div className="tentang-prodi-new">
-        <div className="images-unpam"></div>
+      <div className="con">
+        <img src={unnpam}  className="gambar" alt="Gedung Universitas Pamulang" />
+
+      </div>
 
         <div className="content">
             <p>The Pancasila and Civic Education Study Program (PPKn) is one of the leading study programs under the Faculty of Teacher Training and Education (FKIP) at Pamulang University. The study program was officially established on July 25, 2008, based on the Decree of the Directorate General of Higher Education Number 2359/D/T/2008.</p>

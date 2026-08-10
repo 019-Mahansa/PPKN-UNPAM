@@ -1,10 +1,15 @@
 import react from "react";
 import '../css/TentangProdiNew.css';
+
+import unnpam from "../../assets/GedungdanFasilitasUNPAM/Pendidikan_Pancasila_dan_Kewarganegaraan.jpg"
 import Gambar_kaprodi from "../../assets/Bu_ichwani_with_text.png";
 export default function TentangProdiNewID() {
   return (
     <div className="tentang-prodi-new">
-        <div className="images-unpam"></div>
+      <div className="con">
+        <img src={unnpam}  className="gambar" alt="Gedung Universitas Pamulang" />
+
+      </div>
 
         <div className="content">
             <p>Program Studi Pendidikan Pancasila dan Kewarganegaraan (PPKn) merupakan salah satu program studi unggulan yang bernaung di bawah Fakultas Keguruan dan Ilmu Pendidikan (FKIP) Universitas Pamulang. Program studi ini secara resmi didirikan pada tanggal 25 Juli 2008 berdasarkan Surat Keputusan Direktorat Jenderal Pendidikan Tinggi Nomor 2359/D/T/2008.</p>

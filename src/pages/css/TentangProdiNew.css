@@ -32,6 +32,17 @@
     text-shadow: 0 2px 12px rgba(0, 0, 0, 0.65);
 }
 
+.con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.gambar{
+    width: 50%
+}
+
 .content{
     padding: 1.25rem 1.5rem;
     display: flex;
