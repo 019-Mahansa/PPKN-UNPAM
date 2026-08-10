@@ -1,18 +1,18 @@
 import react from "react";
 import '../css/TentangProdiNew.css';
 import Gambar_kaprodi from "../../assets/Bu_ichwani_with_text.png";
-export default function TentangProdiNewID() {
+export default function TentangProdiNewEN() {
   return (
     <div className="tentang-prodi-new">
         <div className="images-unpam"></div>
 
         <div className="content">
-            <p>Program Studi Pendidikan Pancasila dan Kewarganegaraan (PPKn) merupakan salah satu program studi unggulan yang bernaung di bawah Fakultas Keguruan dan Ilmu Pendidikan (FKIP) Universitas Pamulang. Program studi ini secara resmi didirikan pada tanggal 25 Juli 2008 berdasarkan Surat Keputusan Direktorat Jenderal Pendidikan Tinggi Nomor 2359/D/T/2008.</p>
-            <button className="btn">Selengkapnya</button>
+            <p>The Pancasila and Civic Education Study Program (PPKn) is one of the leading study programs under the Faculty of Teacher Training and Education (FKIP) at Pamulang University. The study program was officially established on July 25, 2008, based on the Decree of the Directorate General of Higher Education Number 2359/D/T/2008.</p>
+            <button className="btn">Read More</button>
         </div>
 
         <div className="titlevideo">
-          <h2>Profil</h2>
+          <h2>Profile</h2>
         </div>
 
         <div className="videocontainer">
@@ -21,7 +21,7 @@ export default function TentangProdiNewID() {
               width="1200"
               height="515"
               src="https://www.youtube.com/embed/SVWM1uO48FE"
-              title="Profil Program Studi PPKn Universitas Pamulang"
+              title="PPKn Study Program Profile at Pamulang University"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
@@ -30,17 +30,17 @@ export default function TentangProdiNewID() {
         </div>
 
         <div className="titlevideo title-pimpinan-prodi">
-          <h2>Pimpinan Prodi</h2>
+          <h2>Program Head</h2>
         </div>
         <div className="pimpinan">
           <div className="left">
-          <p className="title-pimpinan">Kepala Prodi</p>
+          <p className="title-pimpinan">Head of Study Program</p>
           <p className="title-pimpinan">Dr Ichwani Siti Utami, S.Pd. MH</p>
-          <p>Dr Ichwani Siti Utami adalah kepala program studi Pendidikan Pancasila dan Kewarganegaraan di Universitas Pamulang.</p>
-          <button className="btn">Sambutan Kepala Prodi</button>
+          <p>Dr Ichwani Siti Utami is the head of the Pancasila and Civic Education study program at Pamulang University.</p>
+          <button className="btn">Head of Program's Welcome</button>
           </div>
           <div className="right">
-            <img src={Gambar_kaprodi} alt="Kepala Prodi" />
+            <img src={Gambar_kaprodi} alt="Head of Study Program" />
           </div>
         </div>
 
@@ -48,8 +48,8 @@ export default function TentangProdiNewID() {
           <div className="maps-left">
             <div className="maps-iframe-wrapper">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d914.531125393861!2d106.69161309884123!3d-6.345802704278216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e5a6e26dc3cd%3A0xccd6344b8021119d!2sUniversitas%20Pamulang%20Kampus%202%20(UNPAM%20Viktor)!5e0!3m2!1sid!2sid!4v1786337962117!5m2!1sid!2sid"
-                title="Lokasi Universitas Pamulang Kampus 2 Viktor"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d914.531125393861!2d106.69161309884123!3d-6.345802704278216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e5a6e26dc3cd%3A0xccd6344b8021119d!2sUniversitas%20Pamulang%20Kampus%202%20(UNPAM%20Viktor)!5e0!3m2!1sen!2sen!4v1786337962117!5m2!1sen!2sen"
+                title="Location of Pamulang University Campus 2 Viktor"
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="strict-origin-when-cross-origin"
@@ -57,10 +57,10 @@ export default function TentangProdiNewID() {
             </div>
           </div>
           <div className="maps-right">
-            <h2 className="maps-title">Lokasi Universitas Pamulang Kampus 2 Viktor</h2>
+            <h2 className="maps-title">Location of Pamulang University Campus 2 Viktor</h2>
             <p className="maps-address">
               Jl. Surya Kencana No.1, RT.001/RW.002, Cireundeu,
-              Kec. Ciputat Tim., Kota Tangerang Selatan, Banten 15419
+              East Ciputat District, South Tangerang City, Banten 15419
             </p>
             <a
               className="maps-btn"
@@ -68,7 +68,7 @@ export default function TentangProdiNewID() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Buka di Google Maps
+              Open in Google Maps
             </a>
           </div>
         </div>
