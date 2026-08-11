@@ -212,7 +212,7 @@ export const dataDosenEN = [
     pendidikan: { magister: "Sciences", doktor: "-" },
     keahlian: "Social Sciences",
     pddikti:
-      "https://pddikti.kemdiktisaintek.go.id/search/dosen/Amrizal%20Siagian",
+      "https://pddikti.kemdiktisaintek.go.id/detail-dosen/RjVFbwDaTfaqkA4S3uiKED1RL_TWW3W-QqT40Gd8vSChtUZkyks7-8qSbT5ADxd2PA8BuA==",
   },
   {
     id: 21,
