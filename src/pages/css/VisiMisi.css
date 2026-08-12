@@ -1,167 +1,95 @@
 /* =========================================================
-   VISI MISI — Theme: Diagonal sweep from top-left to bottom-left
-   Background section (.visi-misi) uses an angled gradient
-   that visually flows from top-left to bottom-left, with a
-   soft accent stripe overlay for the "big line" feel.
+   VISI MISI — Theme: Formal Minimalist, dengan bobot lebih
+   Tetap tanpa box/card, tapi tipografi lebih tebal, garis
+   lebih kuat, dan angka diberi penanda visual yang lebih hadir.
    ========================================================= */
 :root {
-  /* === Wine Maroon palette === */
-  --vm-bg-1: #3a0a14;   /* top (deeper wine) */
-  --vm-bg-2: #5a1424;   /* mid (classic maroon) */
-  --vm-bg-3: #2c050b;   /* bottom-left (deepest) */
-  --vm-glow: rgba(244, 191, 117, 0.20);   /* warm gold glow on stripe */
-  --vm-text: #f7e9e3;
-  --vm-text-strong: #ffffff;
-  --vm-eyebrow: #f6c89a;
-  --vm-accent: #f4bf75;                   /* soft champagne gold */
-  --vm-accent-soft: rgba(244, 191, 117, 0.18);
-  --vm-card-bg: rgba(255, 251, 247, 0.97);
-  --vm-card-text: #3a0a14;
-  --vm-card-text-soft: #5b2330;
+  --vm-bg: #faf8f4;
+  --vm-ink: #17140f;
+  --vm-ink-soft: #453f38;
+  --vm-maroon: #6b0808;
+  --vm-maroon-deep: #4a0505;
+  --vm-maroon-tint: rgba(107, 8, 8, 0.07);
+  --vm-line: rgba(23, 20, 15, 0.22);
+  --vm-line-soft: rgba(23, 20, 15, 0.14);
 }
 
-/* ---------- Section with diagonal sweep background ---------- */
+/* ---------- Section shell ---------- */
 .visi-misi {
   position: relative;
-  max-width: 1200px;
+  max-width: 880px;
   margin: 0 auto;
-  padding: 4rem 1.5rem;
-  color: var(--vm-text);
+  padding: 5rem 1.5rem 4.5rem;
+  color: var(--vm-ink);
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 1.25rem;
-  overflow: hidden;
-  box-shadow: 0 24px 60px -28px rgba(0, 0, 0, 0.55);
-
-  /* Diagonal gradient: top-left -> bottom-left */
-  background:
-    linear-gradient(
-      160deg,
-      var(--vm-bg-1) 0%,
-      var(--vm-bg-2) 55%,
-      var(--vm-bg-3) 100%
-    );
-}
-
-/* Big diagonal "outline" line from top-left to bottom-left.
-   Made with two thin oblique stripes + a soft glow.
-   It spans the full section as a decorative element. */
-.visi-misi::before {
-  content: "";
-  position: absolute;
-  left: -12%;
-  top: -10%;
-  width: 60%;
-  height: 140%;
-  background:
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.12) 0%,
-      rgba(255, 255, 255, 0.06) 35%,
-      rgba(255, 255, 255, 0.16) 55%,
-      rgba(255, 255, 255, 0.04) 80%,
-      rgba(255, 255, 255, 0.10) 100%
-    );
-  transform: rotate(22deg);
-  transform-origin: top left;
-  filter: blur(0.5px);
-  pointer-events: none;
-}
-
-/* Gold accent stroke on the same diagonal, thinner & sharper */
-.visi-misi::after {
-  content: "";
-  position: absolute;
-  left: -6%;
-  top: -8%;
-  width: 22%;
-  height: 130%;
-  background: linear-gradient(
-    180deg,
-    transparent 0%,
-    var(--vm-glow) 30%,
-    var(--vm-accent) 50%,
-    var(--vm-glow) 70%,
-    transparent 100%
-  );
-  transform: rotate(22deg);
-  transform-origin: top left;
-  opacity: 0.85;
-  pointer-events: none;
-}
-
-/* Keep content above the decorative layer */
-.visi-misi > * {
-  position: relative;
-  z-index: 1;
+  background-color: var(--vm-bg);
+  font-family: 'Inter', -apple-system, 'Segoe UI', sans-serif;
 }
 
 /* ---------- Header ---------- */
 .visi-misi-header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3.5rem;
 }
 
 .visi-misi-eyebrow {
-  font-size: 0.75rem;
+  font-size: 0.78rem;
   font-weight: 700;
-  letter-spacing: 0.25em;
-  color: var(--vm-eyebrow);
+  letter-spacing: 0.3em;
+  color: var(--vm-maroon);
   text-transform: uppercase;
 }
 
 .visi-misi-title {
-  font-size: 2.25rem;
-  font-weight: 800;
-  color: var(--vm-text-strong);
-  margin-top: 0.5rem;
-  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2.65rem;
+  font-weight: 700;
+  color: var(--vm-ink);
+  margin-top: 0.75rem;
+  letter-spacing: 0.005em;
 }
 
+/* Garis lebih tebal & lebih panjang — lebih "hadir" */
 .visi-misi-divider {
-  width: 4rem;
+  width: 64px;
   height: 4px;
-  background-color: var(--vm-accent);
-  margin: 1rem auto 0;
-  border-radius: 9999px;
-  box-shadow: 0 0 0 4px var(--vm-accent-soft);
+  background-color: var(--vm-maroon);
+  margin: 1.5rem auto 0;
+  border-radius: 0;
 }
 
-/* ---------- Visi card (kept clean so text reads well) ---------- */
+/* ---------- Visi — dibatasi garis tegas, bukan box ---------- */
 .visi-card {
-  background-color: var(--vm-card-bg);
-  padding: 2.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 12px 40px -12px rgba(0, 0, 0, 0.55);
-  border: 1px solid rgba(255, 255, 255, 0.55);
-  margin-bottom: 2rem;
+  background-color: transparent;
+  padding: 2.75rem 1rem;
+  margin-bottom: 4rem;
   text-align: center;
-  max-width: 48rem;
+  max-width: 42rem;
   width: 100%;
-  cursor: pointer;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.visi-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 18px 44px -14px rgba(0, 0, 0, 0.6);
+  border-top: 3px solid var(--vm-maroon);
+  border-bottom: 3px solid var(--vm-maroon);
+  box-shadow: none;
+  border-radius: 0;
+  cursor: default;
 }
 
 .visi-label {
-  font-size: 1.5rem;
+  font-size: 0.78rem;
   font-weight: 700;
-  color: var(--vm-card-text);
+  color: var(--vm-maroon);
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  margin-bottom: 1rem;
+  letter-spacing: 0.32em;
+  margin-bottom: 1.25rem;
 }
 
 .visi-quote {
+  font-family: Georgia, 'Times New Roman', serif;
   font-size: 1.25rem;
   font-weight: 500;
-  color: #1e293b;
-  line-height: 1.7;
+  color: var(--vm-ink);
+  line-height: 1.8;
   font-style: italic;
 }
 
@@ -171,119 +99,143 @@
   }
 }
 
-/* ---------- Misi ---------- */
-.misi-section {
-  max-width: 56rem;
+/* ---------- Misi & Tujuan — list dengan bobot lebih ---------- */
+.misi-section,
+.tujuan-section {
+  max-width: 42rem;
   width: 100%;
   margin: 0 auto;
 }
 
-.misi-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--vm-text-strong);
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-.misi-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-}
-
-@media (min-width: 768px) {
-  .misi-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.misi-card {
-  background-color: var(--vm-card-bg);
-  padding: 1.5rem;
-  border-radius: 0.75rem;
-  border: 1px solid rgba(13, 78, 72, 0.12);
-  box-shadow: 0 10px 30px -16px rgba(0, 0, 0, 0.5);
-  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-  cursor: pointer;
-}
-
-.misi-card:hover {
-  border-color: var(--vm-accent);
-  transform: translateY(-2px);
-  box-shadow: 0 14px 34px -16px rgba(0, 0, 0, 0.55);
-}
-
-.misi-number {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--vm-accent);
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.misi-text {
-  font-size: 0.875rem;
-  color: var(--vm-card-text);
-  line-height: 1.7;
-}
-
-/* ---------- Tujuan ---------- */
 .tujuan-section {
-  max-width: 56rem;
-  width: 100%;
-  margin: 3rem auto 0;
+  margin-top: 3.5rem;
 }
 
+.misi-title,
 .tujuan-title {
-  font-size: 1.5rem;
+  font-size: 0.78rem;
   font-weight: 700;
-  color: var(--vm-text-strong);
+  color: var(--vm-maroon);
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  text-align: center;
-  margin-bottom: 1.5rem;
+  letter-spacing: 0.3em;
+  text-align: left;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid var(--vm-ink);
 }
 
+.misi-grid,
 .tujuan-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
-@media (min-width: 768px) {
-  .tujuan-grid {
-    grid-template-columns: repeat(2, 1fr);
+/* Setiap item: garis lebih tegas + padding lebih besar supaya lebih "berisi" */
+.misi-card,
+.tujuan-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.85rem 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--vm-line);
+  border-radius: 0;
+  box-shadow: none;
+  transition: padding-left 0.25s ease, background-color 0.25s ease;
+}
+
+.misi-grid > .misi-card:last-child,
+.tujuan-grid > .tujuan-card:last-child {
+  border-bottom: none;
+}
+
+.misi-card:hover,
+.tujuan-card:hover {
+  padding-left: 0.75rem;
+  background-color: var(--vm-maroon-tint);
+}
+
+/* Angka jadi penanda visual: lingkaran solid maroon, bukan teks tipis */
+.misi-number,
+.tujuan-number {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: var(--vm-maroon);
+  flex-shrink: 0;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.misi-card:hover .misi-number,
+.tujuan-card:hover .tujuan-number {
+  background-color: var(--vm-maroon-deep);
+  transform: scale(1.06);
+}
+
+.misi-text,
+.tujuan-text {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--vm-ink-soft);
+  line-height: 1.75;
+  flex: 1;
+  padding-top: 0.35rem;
+}
+
+/* ===========================
+   Responsive
+   =========================== */
+@media (max-width: 768px) {
+  .visi-misi {
+    padding: 3.5rem 1.25rem 3rem;
+  }
+
+  .visi-misi-title {
+    font-size: 2rem;
+  }
+
+  .visi-card {
+    padding: 2.25rem 0;
+    margin-bottom: 3rem;
+  }
+
+  .visi-quote {
+    font-size: 1.1rem;
+  }
+
+  .misi-card,
+  .tujuan-card {
+    gap: 1rem;
+    padding: 1.5rem 0;
+  }
+
+  .misi-number,
+  .tujuan-number {
+    width: 2.1rem;
+    height: 2.1rem;
+    font-size: 0.95rem;
+  }
+
+  .misi-text,
+  .tujuan-text {
+    font-size: 0.92rem;
   }
 }
 
-.tujuan-card {
-  background-color: var(--vm-card-bg);
-  padding: 1.5rem;
-  border-radius: 0.75rem;
-  border: 1px solid rgba(13, 78, 72, 0.12);
-  box-shadow: 0 10px 30px -16px rgba(0, 0, 0, 0.5);
-  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-}
+@media (max-width: 480px) {
+  .visi-misi-title {
+    font-size: 1.7rem;
+  }
 
-.tujuan-card:hover {
-  border-color: var(--vm-accent);
-  transform: translateY(-2px);
-  box-shadow: 0 14px 34px -16px rgba(0, 0, 0, 0.55);
-}
-
-.tujuan-number {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--vm-accent);
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.tujuan-text {
-  font-size: 0.875rem;
-  color: var(--vm-card-text-soft);
-  line-height: 1.7;
+  .visi-quote {
+    font-size: 1rem;
+  }
 }

@@ -11,6 +11,7 @@ function SambutanKaprodi() {
     window.open("https://pddikti.kemdiktisaintek.go.id/detail-dosen/J4SIYB5CSWZfyLLCNbiHaom8wtBpm2ielGPhaiIU5HFesHiKNUQVpIqucj8SswoLxdUBTQ==", "_blank");
   }
 
+
   const kirimTinggi = useCallback(() => {
     const tinggi = document.documentElement.scrollHeight;
     if (window.parent !== window) {

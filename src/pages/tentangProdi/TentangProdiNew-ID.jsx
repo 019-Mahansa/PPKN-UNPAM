@@ -4,6 +4,10 @@ import '../css/TentangProdiNew.css';
 import unnpam from "../../assets/GedungdanFasilitasUNPAM/Pendidikan_Pancasila_dan_Kewarganegaraan.jpg"
 import Gambar_kaprodi from "../../assets/Bu_ichwani_with_text.png";
 export default function TentangProdiNewID() {
+  const linked = () =>{
+    window.open("https://ppkn.unpam.ac.id/sambutan-ketua-program-studi")
+  }
+
   return (
     <div className="tentang-prodi-new">
       <div className="con">
@@ -42,7 +46,7 @@ export default function TentangProdiNewID() {
           <p className="title-pimpinan">Kepala Prodi</p>
           <p className="title-pimpinan">Dr Ichwani Siti Utami, S.Pd. MH</p>
           <p>Dr Ichwani Siti Utami adalah kepala program studi Pendidikan Pancasila dan Kewarganegaraan di Universitas Pamulang.</p>
-          <button className="btn">Sambutan Kepala Prodi</button>
+          <button className="btn" onClick={linked}>Sambutan Kepala Prodi</button>
           </div>
           <div className="right">
             <img src={Gambar_kaprodi} alt="Kepala Prodi" />
