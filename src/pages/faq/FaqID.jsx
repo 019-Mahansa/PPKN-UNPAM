@@ -6,90 +6,85 @@ function FaqID() {
 
   const faqData = [
     {
-      question: "About our profile?",
+      question: "Apa itu Program Studi PPKn di Universitas Pamulang?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod",
+        "Program Studi Pendidikan Pancasila dan Kewarganegaraan (PPKn) Universitas Pamulang adalah salah satu program studi unggulan di bawah naungan Fakultas Keguruan dan Ilmu Pendidikan (FKIP). Didirikan pada tahun 2008 dengan SK Pendirian Nomor 2359/D/T/2008 tertanggal 25 Juli 2008, prodi ini menjadi tonggak awal lahirnya pendidikan keguruan di Universitas Pamulang.",
     },
     {
-      question: "News and topics?",
-      answer: "Isi jawaban untuk news and topics ditaruh di sini.",
+      question: "Apa visi dan misi dari Prodi PPKn UNPAM?",
+      answer:
+        "Prodi PPKn UNPAM memiliki visi untuk mencetak pendidik yang kompeten, religius, dan berwawasan kebangsaan. Program ini berkomitmen kuat dalam membangun karakter mahasiswa yang menjunjung tinggi nilai-nilai Pancasila serta semangat kebhinekaan. Melalui kurikulum yang adaptif, penguatan karakter, serta pendekatan pembelajaran berbasis teknologi dan nilai, prodi ini mendorong lahirnya generasi pendidik dan warga negara yang cerdas, kritis, serta bertanggung jawab secara sosial dan moral.",
     },
     {
-      question: "How to use?",
-      answer: "Isi panduan cara penggunaan ditaruh di sini.",
+      question: "Apa saja perkembangan dan pencapaian terbaru Prodi PPKn UNPAM?",
+      answer:
+        "Prodi PPKn UNPAM terus menunjukkan perkembangan dan pencapaian yang signifikan. Beberapa di antaranya adalah:\n(1) Transisi kurikulum menuju Outcome-Based Education (OBE) untuk menghasilkan lulusan yang lebih terukur dan adaptif. \n(2) Menjalin berbagai kerja sama akademik, baik nasional dengan universitas ternama seperti Universitas Sebelas Maret (UNS), Universitas Negeri Padang (UNP), dan Universitas Negeri Surabaya (UNESA), maupun internasional dengan ELMU University Malaysia, Universiti Malaysia Terengganu, dan Kolej Antarbangsa Mighty Skills. \n(3) Menggelar berbagai kegiatan seperti kuliah umum, seminar internasional, dan workshop untuk memperkuat nilai kebangsaan dan inovasi pembelajaran.",
+    },
+    {
+      question: "Bagaimana prospek lulusan dan penilaian terhadap alumni PPKn UNPAM?",
+      answer:
+        "Lulusan Prodi PPKn UNPAM dinilai positif oleh pengguna. Berdasarkan survei Tingkat Kepuasan Pengguna Alumni Tahun 2025, mayoritas pengguna memberikan penilaian pada kategori baik hingga sangat baik terhadap berbagai aspek kompetensi alumni. Aspek kemampuan berkomunikasi memperoleh penilaian sangat baik tertinggi (55%), diikuti aspek etika dan penguasaan teknologi informasi (masing-masing 54%), serta kemampuan kerja sama tim dan pengembangan diri (52%). Hasil ini menunjukkan bahwa lulusan PPKn Universitas Pamulang dinilai memiliki penguasaan keilmuan yang relevan dengan kebutuhan dunia kerja dan masyarakat.",
+    },
+    {
+      question: "Apa saja komitmen dan kontribusi Prodi PPKn UNPAM bagi masyarakat?",
+      answer:
+        "Prodi PPKn UNPAM berkomitmen untuk memberikan kontribusi nyata bagi masyarakat. Beberapa contohnya adalah:\n(1) Menjalin kerja sama dengan Desa Tegal dalam maintenance aplikasi persuratan desa untuk mendukung peningkatan kualitas pelayanan publik berbasis digital. \n(2) Melaksanakan kegiatan pengabdian kepada masyarakat, termasuk program internasional bersama PUP Filipina. \n(3) Menggelar kuliah umum dengan tema penguatan kebhinnekaan untuk membangun kesadaran generasi muda terhadap pentingnya menjaga keberagaman.",
+    },
+    {
+      question: "Apa keunggulan Program Studi PPKn di Universitas Pamulang?",
+      answer:
+        "Keunggulan Prodi PPKn UNPAM terletak pada kurikulum yang berbasis Outcome-Based Education (OBE), dosen yang berpengalaman, serta suasana akademik yang mendukung pengembangan karakter dan wawasan kebangsaan. Selain itu, prodi ini aktif menjalin kerja sama nasional dan internasional, serta menyediakan berbagai kegiatan pengabdian dan penelitian yang memperkaya pengalaman mahasiswa.",
+    },
+    {
+      question: "Bagaimana sistem perkuliahan di Prodi PPKn UNPAM?",
+      answer:
+        "Perkuliahan di Prodi PPKn UNPAM menggunakan pendekatan blended learning, menggabungkan pembelajaran tatap muka dan daring. Mahasiswa juga dilibatkan dalam diskusi, simulasi, serta praktik lapangan untuk mengasah kemampuan mengajar dan analisis sosial-politik. Dosen menggunakan metode interaktif dan berbasis proyek agar mahasiswa siap menghadapi tantangan di dunia pendidikan dan masyarakat.",
+    },
+    {
+      question: "Apa saja peluang karir lulusan PPKn UNPAM?",
+      answer:
+        "Lulusan PPKn UNPAM memiliki peluang karir yang luas, antara lain sebagai guru PPKn di sekolah menengah, dosen, peneliti di bidang pendidikan kewarganegaraan, konsultan kebijakan publik, pegawai negeri sipil, serta pengelola lembaga swadaya masyarakat yang bergerak di bidang demokrasi dan hak asasi manusia. Dengan bekal keterampilan komunikasi dan kepemimpinan yang kuat, lulusan juga dapat berkarier di sektor swasta dan organisasi internasional.",
+    },
+    // ===== PERTANYAAN BARU DENGAN POIN-POIN =====
+    {
+      question: "Apa saja keuntungan memilih Program Studi PPKn di Universitas Pamulang?",
+      answer:
+        "Ada beberapa keuntungan utama yang bisa didapatkan:\n(1) Kurikulum berbasis Outcome-Based Education (OBE) yang mengacu pada kebutuhan dunia kerja dan perkembangan zaman.\n(2) Dosen berkualitas dan berpengalaman di bidang pendidikan kewarganegaraan, serta aktif dalam penelitian dan pengabdian.\n(3) Jaringan kerja sama luas dengan berbagai universitas dalam dan luar negeri, membuka peluang pertukaran mahasiswa dan kolaborasi akademik.\n(4) Lingkungan kampus yang mendukung pengembangan soft skill, seperti organisasi kemahasiswaan, seminar, dan pelatihan kepemimpinan.\n(5) Lulusan yang kompeten dan siap bersaing di berbagai sektor, baik pendidikan, pemerintahan, maupun masyarakat sipil.",
     },
   ];
 
   const toggleFaq = (index) => {
-    // Kalau di-klik lagi saat terbuka, bakal nutup. Kalau klik yang lain, ganti yang buka.
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
-      <div className="faq-container">
-        {/* Navigation Bar */}
-        {/* <header className="navbar">
-          <div className="brand-contact">CONTACT US</div>
-          <nav className="nav-menu">
-            <a href="#home">HOME</a>
-            <a href="#about">ABOUT US</a>
-            <a href="#blog">BLOG</a>
-            <a href="#faq" className="active">
-              FAQ
-            </a>
-          </nav>
-          <div className="user-greeting">HELLO, USERNAME</div>
-        </header> */}
-
-        {/* Main Content Area */}
-        <main className="content-layout">
-          {/* Left Column - FAQ Text & Accordion */}
-          <section className="faq-text-section">
-            <h1>Pertanyaan umum</h1>
-
-            {/* <div className="search-box">
-              <input type="text" placeholder="Search question here" />
-              <span className="search-icon">
-                <svg
-                  viewBox="0 0 24 24"
-                  width="20"
-                  height="20"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+    <div className="faq-container">
+      <main className="content-layout">
+        <section className="faq-text-section">
+          <h1>Pertanyaan umum</h1>
+          <div className="accordion">
+            {faqData.map((item, index) => (
+              <div key={index} className="accordion-item">
+                <button
+                  className="accordion-header"
+                  onClick={() => toggleFaq(index)}
                 >
-                  <circle cx="11" cy="11" r="8"></circle>
-                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                </svg>
-              </span>
-            </div> */}
-
-            <div className="accordion">
-              {faqData.map((item, index) => (
-                <div key={index} className="accordion-item">
-                  <button
-                    className="accordion-header"
-                    onClick={() => toggleFaq(index)}
-                  >
-                    <h2>{item.question}</h2>
-                    <span className="toggle-icon">
-                      {openIndex === index ? "-" : "+"}
-                    </span>
-                  </button>
-
-                  {openIndex === index && (
-                    <div className="accordion-content">
-                      <p>{item.answer}</p>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </section>
-        </main>
-      </div>
+                  <h2>{item.question}</h2>
+                  <span className="toggle-icon">
+                    {openIndex === index ? "-" : "+"}
+                  </span>
+                </button>
+                {openIndex === index && (
+                  <div className="accordion-content">
+                    <p>{item.answer}</p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+      </main>
+    </div>
   );
 }
 

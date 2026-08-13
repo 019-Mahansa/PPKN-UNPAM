@@ -156,6 +156,7 @@ body {
 
 .accordion-content {
   padding-bottom: 10px;
+  white-space: pre-line;
 }
 
 .accordion-content p {
