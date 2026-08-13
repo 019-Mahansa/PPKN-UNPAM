@@ -11,7 +11,6 @@
   font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
   background-color: #ffffff;
   min-height: 100vh;
-  /* Tambahan: subtle gradient background */
   background-image: radial-gradient(circle at 10% 20%, rgba(53, 15, 8, 0.03) 0%, transparent 50%),
                     radial-gradient(circle at 90% 80%, rgba(53, 15, 8, 0.05) 0%, transparent 50%);
   position: relative;
@@ -31,11 +30,9 @@
   padding: 3.5rem 6rem;
   border-radius: 26px;
   box-shadow: 0 8px 25px rgba(53, 15, 8, 0.08), 0 2px 6px rgba(53, 15, 8, 0.12);
-  /* Animasi masuk halus */
   animation: fadeInUp 0.8s ease both;
   position: relative;
   z-index: 1;
-  /* Tambahan: backdrop blur untuk efek modern */
   backdrop-filter: blur(2px);
 }
 
@@ -49,7 +46,6 @@
   letter-spacing: -0.02em;
   border-left: 6px solid #350f08;
   padding-left: 1rem;
-  /* Animasi masuk dengan delay */
   animation: fadeInLeft 0.8s ease both;
   animation-delay: 0.1s;
   position: relative;
@@ -61,11 +57,18 @@
   position: absolute;
   bottom: -8px;
   left: 1rem;
-  width: 60px;
+  width: 120px;                /* Lebih panjang agar terlihat penuh */
   height: 3px;
-  background: linear-gradient(90deg, #350f08, transparent);
+  background: linear-gradient(90deg, #350f08, #7a3b2a);
   border-radius: 2px;
   animation: expandWidth 0.8s ease both 0.4s;
+  transition: width 0.4s ease, background 0.4s ease;
+}
+
+/* Hover judul: garis melebar */
+.faq-text-section h1:hover::after {
+  width: 100%;
+  background: linear-gradient(90deg, #350f08, #a0522d);
 }
 
 /* Akordion */
@@ -76,7 +79,7 @@
   position: relative;
 }
 
-/* Garis penghubung antar item (opsional) */
+/* Garis penghubung antar item */
 .accordion::before {
   content: '';
   position: absolute;
@@ -93,7 +96,7 @@
   border-radius: 16px;
   overflow: hidden;
   background: #ffffff;
-  /* Transisi lebih kaya */
+  cursor: pointer;               /* Seluruh item bisa diklik */
   transition: box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
               transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
               border-color 0.3s ease,
@@ -161,10 +164,10 @@
 
 .accordion-header:hover {
   background: #f0e8e4;
-  padding-left: 2rem; /* Geser sedikit ke kanan */
+  padding-left: 2rem;
 }
 
-/* Efek ripple saat klik (CSS-only) */
+/* Efek ripple saat klik */
 .accordion-header:active::after {
   content: '';
   position: absolute;
@@ -220,16 +223,15 @@
               box-shadow 0.3s ease;
 }
 
-/* Rotasi ikon saat konten terbuka (dukungan modern + fallback class) */
-.accordion-item.open .toggle-icon,
-.accordion-item:has(.accordion-content.open) .toggle-icon {
+/* Rotasi ikon saat terbuka */
+.accordion-item.open .toggle-icon {
   transform: rotate(45deg);
   background: #350f08;
   color: #ffffff;
   box-shadow: 0 4px 12px rgba(53, 15, 8, 0.3);
 }
 
-/* Efek pulse halus saat hover pada ikon */
+/* Pulse saat hover ikon */
 .accordion-header:hover .toggle-icon {
   animation: pulseIcon 0.5s ease;
 }
@@ -257,7 +259,6 @@
   padding: 1.5rem 1.5rem;
   border-top-color: #ede5e1;
   transform: translateY(0);
-  /* Tambahan: animasi fade-in teks */
   animation: contentFadeIn 0.5s ease both;
 }
 
@@ -273,7 +274,6 @@
   transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
-/* Saat konten terbuka, paragraf muncul */
 .accordion-content.open p {
   opacity: 1;
   transform: translateY(0);
@@ -282,30 +282,18 @@
 
 /* ========== KEYFRAMES ========== */
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
 }
 
 @keyframes expandWidth {
-  from { width: 0; }
-  to { width: 60px; }
+  from { width: 0; opacity: 0; }
+  to { width: 120px; opacity: 1; }
 }
 
 @keyframes pulseIcon {
@@ -315,29 +303,16 @@
 }
 
 @keyframes ripple {
-  from {
-    transform: translate(-50%, -50%) scale(0);
-    opacity: 0.8;
-  }
-  to {
-    transform: translate(-50%, -50%) scale(4);
-    opacity: 0;
-  }
+  from { transform: translate(-50%, -50%) scale(0); opacity: 0.8; }
+  to { transform: translate(-50%, -50%) scale(4); opacity: 0; }
 }
 
 @keyframes contentFadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(5px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* ========== RESPONSIF ========== */
-/* Tablet & layar sedang */
 @media (min-width: 768px) and (max-width: 1023px) {
   .faq-text-section {
     padding: 2.5rem 2rem;
@@ -357,7 +332,6 @@
   }
 }
 
-/* Layar kecil (ponsel) */
 @media (max-width: 767px) {
   .faq-container {
     padding: 1rem 0.75rem;
@@ -392,7 +366,6 @@
   }
 }
 
-/* Layar besar (desktop lebar) */
 @media (min-width: 1300px) {
   .faq-text-section {
     padding: 4rem 5rem;
