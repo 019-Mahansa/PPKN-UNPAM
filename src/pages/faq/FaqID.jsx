@@ -74,11 +74,9 @@ function FaqID() {
                     {openIndex === index ? "-" : "+"}
                   </span>
                 </button>
-                {openIndex === index && (
-                  <div className="accordion-content">
+                  <div className={`accordion-content ${openIndex === index ? 'open' : ''}`}>
                     <p>{item.answer}</p>
-                  </div>
-                )}
+                </div>
               </div>
             ))}
           </div>

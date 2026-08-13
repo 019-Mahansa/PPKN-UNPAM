@@ -1,200 +1,198 @@
-:root {
-  --bg-orange: #f29c38;
-  --card-border-orange: rgba(230, 138, 46, 0.6);
-  --text-dark: #35385d;
-  --text-light: #9fa1ad;
-  --accent-orange: #d95d39;
-  --accent-yellow: #cddc39;
-  --bg-gray: #f4f5f7;
-  --white: #ffffff;
-}
-
+/* Faq.css - Tema warna #350f08 */
 * {
-  box-sizing: border-box;
-  margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body {
-    min-height: 100vh;
-}
-
+/* Container utama */
 .faq-container {
-  background-color: var(--white);
-  width: 100%;
+  padding: 2rem 1.5rem;
+  font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+  background-color: #ffffff;
+  min-height: 100vh;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 80px;
-}
-
-.brand-contact {
-  color: var(--accent-orange);
-  font-weight: 800;
-  font-size: 14px;
-  letter-spacing: 1px;
-}
-
-.nav-menu {
-  display: flex;
-  gap: 40px;
-}
-
-.nav-menu a {
-  text-decoration: none;
-  color: var(--text-dark);
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding-bottom: 4px;
-}
-
-.nav-menu a.active {
-  border-bottom: 3px solid var(--accent-yellow);
-}
-
-.user-greeting {
-  color: var(--text-dark);
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  text-decoration-color: var(--accent-yellow);
-  text-decoration-thickness: 3px;
-}
-
-/* Main Content Layout */
+/* Layout utama */
 .content-layout {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 60px;
-}
-
-/* Left Column */
-.faq-text-section {
-  flex: 1;
-  max-width: 45%;
-}
-
-.faq-text-section h1 {
-  color: var(--text-dark);
-  font-size: 42px;
-  line-height: 1.2;
-  margin-bottom: 30px;
-}
-
-/* Search Box */
-.search-box {
-  display: flex;
-  align-items: center;
-  background-color: var(--bg-gray);
-  border-radius: 30px;
-  padding: 12px 25px;
-  margin-bottom: 40px;
-}
-
-.search-box input {
-  flex: 1;
-  border: none;
-  background: transparent;
-  outline: none;
-  font-size: 14px;
-  color: var(--text-dark);
-}
-
-.search-box input::placeholder {
-  color: var(--text-light);
-}
-
-.search-icon {
-  color: var(--text-light);
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
 
-/* Accordion */
+.faq-text-section {
+  width: 100%;
+  max-width: 1000px;
+  background-color: #f5f5f5;
+  padding: 3.5rem 4rem;
+  border-radius: 26px;
+  box-shadow: 0 10px 30px rgba(53, 15, 8, 0.08);
+}
+
+/* Judul halaman */
+.faq-text-section h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #350f08;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+  border-left: 6px solid #350f08;
+  padding-left: 1rem;
+}
+
+/* Akordion */
 .accordion {
   display: flex;
   flex-direction: column;
+  gap: 0.75rem;
 }
 
 .accordion-item {
-  border-bottom: 1px solid #eaeaea;
-  padding: 15px 0;
+  border: 1px solid #e8dfdb;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #ffffff;
+  transition: box-shadow 0.2s ease;
 }
 
+.accordion-item:hover {
+  box-shadow: 0 4px 12px rgba(53, 15, 8, 0.06);
+}
+
+/* Tombol header */
 .accordion-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding: 1.25rem 1.5rem;
   background: none;
   border: none;
   cursor: pointer;
   text-align: left;
-  padding: 10px 0;
+  font: inherit;
+  transition: background 0.15s ease;
+  background: #faf6f4;
+}
+
+.accordion-header:hover {
+  background: #f0e8e4;
 }
 
 .accordion-header h2 {
-  font-size: 15px;
-  color: var(--text-dark);
-  font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2a1a16;
+  margin: 0;
+  flex: 1;
+  padding-right: 1rem;
+  line-height: 1.4;
 }
 
+/* Ikon toggle */
 .toggle-icon {
-  font-size: 20px;
-  color: var(--text-light);
+  font-size: 1.8rem;
   font-weight: 300;
+  color: #350f08;
+  flex-shrink: 0;
+  width: 2rem;
+  text-align: center;
+  line-height: 1;
+  transition: transform 0.2s ease;
 }
 
+/* ========== KONTEN AKORDION DENGAN ANIMASI ========== */
 .accordion-content {
-  padding-bottom: 10px;
-  white-space: pre-line;
+  max-height: 0;                /* tertutup */
+  opacity: 0;
+  padding: 0 1.5rem;
+  background: #ffffff;
+  border-top: 1px solid transparent; /* hilang saat tertutup */
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out,
+              opacity 0.3s ease-in-out,
+              padding 0.3s ease-in-out,
+              border-color 0.3s ease-in-out;
+}
+
+.accordion-content.open {
+  max-height: 800px;            /* cukup besar untuk semua konten */
+  opacity: 1;
+  padding: 1.5rem 1.5rem;
+  border-top-color: #ede5e1;
 }
 
 .accordion-content p {
-  color: var(--text-light);
-  font-size: 13px;
-  line-height: 1.6;
-  padding-right: 20px;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #2d1f1b;
+  white-space: pre-line;
+  word-break: break-word;
 }
 
-/* Right Column (Illustration) */
-.faq-illustration {
-  flex: 1.2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.faq-illustration img {
-  width: 100%;
-  max-width: 600px;
-  object-fit: contain;
-}
-
-/* Basic Responsiveness */
-@media (max-width: 900px) {
-  .content-layout {
-    flex-direction: column;
-  }
-  
+/* ========== RESPONSIF ========== */
+/* Tablet & layar sedang */
+@media (min-width: 768px) and (max-width: 1023px) {
   .faq-text-section {
-    max-width: 100%;
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
   }
+  .faq-text-section h1 {
+    font-size: 2rem;
+  }
+  .accordion-header {
+    padding: 1rem 1.25rem;
+  }
+  .accordion-header h2 {
+    font-size: 1.05rem;
+  }
+  .accordion-content.open {
+    padding: 1.25rem 1.25rem;
+  }
+}
 
-  .nav-menu {
-    display: none; 
-  }
-  
+/* Layar kecil (ponsel) */
+@media (max-width: 767px) {
   .faq-container {
-    padding: 30px;
+    padding: 1rem 0.75rem;
+  }
+  .faq-text-section {
+    padding: 1.5rem 1rem;
+    border-radius: 16px;
+  }
+  .faq-text-section h1 {
+    font-size: 1.6rem;
+    padding-left: 0.75rem;
+  }
+  .accordion-header {
+    padding: 1rem 1rem;
+  }
+  .accordion-header h2 {
+    font-size: 1rem;
+  }
+  .toggle-icon {
+    font-size: 1.5rem;
+    width: 1.5rem;
+  }
+  .accordion-content.open {
+    padding: 1rem 1rem;
+  }
+  .accordion-content p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Layar besar (desktop lebar) */
+@media (min-width: 1200px) {
+  .faq-text-section {
+    padding: 4rem 4.5rem;
+    max-width: 1100px;
+  }
+  .faq-text-section h1 {
+    font-size: 2.6rem;
+  }
+  .accordion-header h2 {
+    font-size: 1.2rem;
   }
 }
