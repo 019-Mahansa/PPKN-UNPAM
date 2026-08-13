@@ -9,12 +9,22 @@
 .faq-container {
   padding: 1rem 1.5rem 5rem;
   font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
-  background-color: #ffffff;
+
   min-height: 100vh;
-  background-image: radial-gradient(circle at 10% 20%, rgba(53, 15, 8, 0.03) 0%, transparent 50%),
-                    radial-gradient(circle at 90% 80%, rgba(53, 15, 8, 0.05) 0%, transparent 50%);
   position: relative;
   overflow-x: hidden;
+
+  /* Background */
+  background-color: #ffffff;
+
+  /* Dot pattern */
+  background-image: radial-gradient(
+    circle,
+    rgba(148, 163, 184, 0.35) 1px,
+    transparent 1px
+  );
+
+  background-size: 22px 22px;
 }
 
 /* Layout utama */
