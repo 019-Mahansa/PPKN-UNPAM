@@ -48,7 +48,6 @@ function FaqID() {
       answer:
         "Lulusan PPKn UNPAM memiliki peluang karir yang luas, antara lain sebagai guru PPKn di sekolah menengah, dosen, peneliti di bidang pendidikan kewarganegaraan, konsultan kebijakan publik, pegawai negeri sipil, serta pengelola lembaga swadaya masyarakat yang bergerak di bidang demokrasi dan hak asasi manusia. Dengan bekal keterampilan komunikasi dan kepemimpinan yang kuat, lulusan juga dapat berkarier di sektor swasta dan organisasi internasional.",
     },
-    // ===== PERTANYAAN BARU DENGAN POIN-POIN =====
     {
       question:
         "Apa saja keuntungan memilih Program Studi PPKn di Universitas Pamulang?",
@@ -61,6 +60,17 @@ function FaqID() {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  // Handler untuk klik pada item (selain header)
+  const handleItemClick = (index) => {
+    toggleFaq(index);
+  };
+
+  // Handler untuk klik pada header (stopPropagation agar tidak double toggle)
+  const handleHeaderClick = (e, index) => {
+    e.stopPropagation();
+    toggleFaq(index);
+  };
+
   return (
     <div className="faq-container">
       <main className="content-layout">
@@ -68,14 +78,18 @@ function FaqID() {
           <h1>Pertanyaan umum</h1>
           <div className="accordion">
             {faqData.map((item, index) => (
-              <div key={index} className="accordion-item">
+              <div
+                key={index}
+                className={`accordion-item ${openIndex === index ? "open" : ""}`}
+                onClick={() => handleItemClick(index)}
+              >
                 <button
                   className="accordion-header"
-                  onClick={() => toggleFaq(index)}
+                  onClick={(e) => handleHeaderClick(e, index)}
                 >
                   <h2>{item.question}</h2>
                   <span className="toggle-icon">
-                    {openIndex === index ? "-" : "+"}
+                    {openIndex === index ? "−" : "+"}
                   </span>
                 </button>
                 <div
