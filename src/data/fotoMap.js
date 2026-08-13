@@ -1,9 +1,9 @@
 // Mapping foto dosen. Jika tidak ada, fallback ke icon.png.
 // Import gambar di sini agar Vite bisa membundle dan hashing nama file.
 import icon from "../assets/icon.png";
-import ichwani from "../assets/imageDosen/Ichwani.jpg";
-import sugiyanto from "../assets/imageDosen/Sugiyanto.jpg";
-import roni from "../assets/imageDosen/Roni_Rustandi.jpg";
+import ichwani from "../assets/imageDosen/Ichwani.png";
+import sugiyanto from "../assets/imageDosen/sugiyanto.png";
+import roni from "../assets/imageDosen/roni.png";
 import nurdiyana from "../assets/imageDosen/nurdiyana.jpg";
 import herdi from "../assets/imageDosen/herdi_wisman_jaya.jpg";
 import etiHayati from "../assets/imageDosen/eti hayati.png";
@@ -58,7 +58,7 @@ const fotoMap = {
   22: saepudin, // Saepudin Karta Sasmita
   23: icon, // Darto -> icon
   24: lathifah, // Lathifah Sandra Devi
-  25: eka, // Eka Setiana -> icon
+  25: eka, // Eka Setiana
   26: raistin, // Raistin Nur Abidin
   27: susi, // Susi
   28: suheppy, // Muhammad Suheppy
