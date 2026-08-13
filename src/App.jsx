@@ -13,6 +13,7 @@ import TentangProdiNewEN from "./pages/tentangProdi/TentangProdiNew-EN";
 
 import SambutanKaprodi from "./pages/sambutanKaprodi/SambutanKaprodi";
 import FaqID from "./pages/faq/FaqID";
+import FaqEN from "./pages/faq/FaqEN";
 
 import PMB from "./pages/PMB/PMB";
 
@@ -40,6 +41,7 @@ function App() {
 
         <Route path="/prestasi-mahasiswa" element={<PrestasiMahasiswa />}/>
         <Route path="/faq/id" element={<FaqID />}/>
+        <Route path="/faq/en" element={<FaqEN />}/>
 
         <Route path="/pmb/id" element={<PMB />}/>
         
