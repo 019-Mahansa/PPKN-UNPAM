@@ -1,0 +1,394 @@
+/* PMB.css — tema hitam & maroon */
+
+.pmbPage {
+    --pmb-ink: #17140F;
+    --pmb-maroon: #7A1626;
+    --pmb-maroon-dark: #55101B;
+    --pmb-muted: #6B655F;
+    --pmb-paper: #FFFFFF;
+    --pmb-surface: #F4EFE9;
+    --pmb-line: #E7E0D8;
+
+    background: var(--pmb-paper);
+    color: var(--pmb-ink);
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.pmb {
+    background: var(--pmb-paper);
+}
+
+.pmb__hero {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 88px 40px 96px;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    align-items: center;
+    gap: 48px;
+}
+
+/* ---------- Kiri: teks ---------- */
+
+.pmb__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.pmb__title {
+    margin: 0;
+    font-family: "Sora", "Inter", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: clamp(2.1rem, 3.4vw, 3rem);
+    line-height: 1.18;
+    letter-spacing: -0.01em;
+}
+
+.pmb__title-base {
+    display: block;
+    color: var(--pmb-ink);
+}
+
+.pmb__title-accent {
+    display: block;
+    color: var(--pmb-maroon);
+    margin-top: 4px;
+}
+
+.pmb__desc {
+    margin: 28px 0 0;
+    max-width: 46ch;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--pmb-muted);
+}
+
+.pmb__cta {
+    margin-top: 36px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 26px;
+    border-radius: 999px;
+    border: 1.5px solid var(--pmb-maroon);
+    color: var(--pmb-maroon);
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    background: transparent;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.pmb__cta:hover {
+    background: var(--pmb-maroon);
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+.pmb__cta:focus-visible {
+    outline: 2px solid var(--pmb-maroon-dark);
+    outline-offset: 3px;
+}
+
+.pmb__cta-icon {
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+}
+
+.pmb__cta-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* ---------- Kanan: gambar ---------- */
+
+.pmb__right {
+    display: flex;
+    justify-content: center;
+}
+
+.pmb__imageFrame {
+    position: relative;
+    width: 100%;
+    max-width: 460px;
+    aspect-ratio: 4 / 5;
+    border-radius: 28px;
+    overflow: hidden;
+    background: var(--pmb-surface);
+}
+
+.pmb__imagePlaceholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.pmb__imagePlaceholder svg {
+    width: 55%;
+}
+
+.pmb__imagePlaceholder-label {
+    font-size: 0.8rem;
+    color: var(--pmb-muted);
+}
+
+.pmb__pattern {
+    position: absolute;
+    right: -30px;
+    bottom: -30px;
+    width: 44%;
+    opacity: 0.9;
+    pointer-events: none;
+}
+
+/* ---------- Responsif ---------- */
+
+@media (max-width: 900px) {
+    .pmb__hero {
+        grid-template-columns: 1fr;
+        padding: 56px 24px 64px;
+        gap: 40px;
+    }
+
+    .pmb__right {
+        order: -1;
+    }
+
+    .pmb__imageFrame {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    .pmb__left {
+        align-items: flex-start;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .pmb__cta {
+        transition: none;
+    }
+}
+
+/* =========================================================
+   PROGRAM (tab Sarjana / Pascasarjana)
+   ========================================================= */
+
+.pmbProgram {
+    padding: 72px 40px 100px;
+    background: var(--pmb-paper);
+}
+
+.pmbProgram__inner {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.pmbProgram__badge {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 24px;
+    padding: 8px 20px;
+    border: 1.5px solid var(--pmb-line);
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--pmb-muted);
+}
+
+.pmbProgram__heading {
+    margin: 0 auto 40px;
+    max-width: 46ch;
+    text-align: center;
+    font-family: "Sora", "Inter", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.5rem, 2.6vw, 2.1rem);
+    line-height: 1.35;
+    color: var(--pmb-ink);
+}
+
+/* ---------- Tabs ---------- */
+
+.pmbProgram__tabs {
+    display: flex;
+}
+
+.pmbProgram__tab {
+    position: relative;
+    z-index: 1;
+    padding: 16px 40px;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.75);
+    background: linear-gradient(135deg, var(--pmb-maroon) 0%, var(--pmb-maroon-dark) 100%);
+    opacity: 0.5;
+    clip-path: polygon(0 0, 100% 0, 84% 100%, 0 100%);
+    margin-right: -22px;
+    transition: opacity 0.2s ease;
+}
+
+.pmbProgram__tab:last-child {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    margin-right: 0;
+    padding-left: 46px;
+}
+
+.pmbProgram__tab.is-active {
+    opacity: 1;
+    color: #fff;
+    z-index: 2;
+}
+
+.pmbProgram__tab:focus-visible {
+    outline: 2px solid var(--pmb-ink);
+    outline-offset: -4px;
+}
+
+/* ---------- Panel ---------- */
+
+.pmbProgram__panel {
+    position: relative;
+    border-radius: 0 28px 28px 28px;
+    padding: 44px 48px 48px;
+    color: #fff;
+    background-image:
+        radial-gradient(rgba(255, 255, 255, 0.14) 1px, transparent 1px),
+        linear-gradient(135deg, var(--pmb-maroon) 0%, var(--pmb-maroon-dark) 100%);
+    background-size: 18px 18px, 100% 100%;
+    overflow: hidden;
+}
+
+.pmbProgram__panelTop {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 16px;
+    padding-bottom: 28px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.pmbProgram__panelTitle {
+    margin: 0;
+    font-family: "Sora", "Inter", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+}
+
+.pmbProgram__panelSubtitle {
+    margin: 0;
+    max-width: 34ch;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.pmbProgram__label {
+    margin: 0 0 18px;
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+.pmbProgram__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 36px;
+}
+
+.pmbProgram__card {
+    padding: 22px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.pmbProgram__cardIcon {
+    display: inline-flex;
+    width: 34px;
+    height: 34px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.14);
+    color: #fff;
+}
+
+.pmbProgram__cardIcon svg {
+    width: 18px;
+    height: 18px;
+}
+
+.pmbProgram__card p {
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.pmbProgram__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.pmbProgram__btn {
+    padding: 13px 26px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.pmbProgram__btn--outline {
+    border: 1.5px solid rgba(255, 255, 255, 0.7);
+    color: #fff;
+    background: transparent;
+}
+
+.pmbProgram__btn--outline:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.pmbProgram__btn--solid {
+    border: 1.5px solid #fff;
+    background: #fff;
+    color: var(--pmb-maroon-dark);
+}
+
+.pmbProgram__btn--solid:hover {
+    transform: translateY(-1px);
+}
+
+/* ---------- Responsif ---------- */
+
+@media (max-width: 900px) {
+    .pmbProgram {
+        padding: 56px 24px 72px;
+    }
+
+    .pmbProgram__cards {
+        grid-template-columns: 1fr;
+    }
+
+    .pmbProgram__tab {
+        padding: 14px 22px;
+        font-size: 0.85rem;
+    }
+
+    .pmbProgram__panel {
+        padding: 32px 24px 32px;
+    }
+}

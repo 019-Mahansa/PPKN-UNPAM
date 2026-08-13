@@ -14,6 +14,8 @@ import TentangProdiNewEN from "./pages/tentangProdi/TentangProdiNew-EN";
 import SambutanKaprodi from "./pages/sambutanKaprodi/SambutanKaprodi";
 import FaqID from "./pages/faq/FaqID";
 
+import PMB from "./pages/PMB/PMB";
+
 import PrestasiMahasiswa from "./pages/PrestasiMahasiswa/PrestasiMahasiwa";
 function App() {
   return (
@@ -38,6 +40,8 @@ function App() {
 
         <Route path="/prestasi-mahasiswa" element={<PrestasiMahasiswa />}/>
         <Route path="/faq/id" element={<FaqID />}/>
+
+        <Route path="/pmb/id" element={<PMB />}/>
         
         </Routes>
       </BrowserRouter>
