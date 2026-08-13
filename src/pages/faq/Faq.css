@@ -1,4 +1,4 @@
-/* Faq.css - Tema warna #350f08 */
+/* Faq.css - Tema warna #350f08 dengan fitur animasi lengkap */
 * {
   padding: 0;
   margin: 0;
@@ -11,6 +11,11 @@
   font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
   background-color: #ffffff;
   min-height: 100vh;
+  /* Tambahan: subtle gradient background */
+  background-image: radial-gradient(circle at 10% 20%, rgba(53, 15, 8, 0.03) 0%, transparent 50%),
+                    radial-gradient(circle at 90% 80%, rgba(53, 15, 8, 0.05) 0%, transparent 50%);
+  position: relative;
+  overflow-x: hidden;
 }
 
 /* Layout utama */
@@ -25,7 +30,13 @@
   background-color: #ffffff;
   padding: 3.5rem 6rem;
   border-radius: 26px;
-  box-shadow: 0 3px 5px rgba(53, 15, 8, 0.275);
+  box-shadow: 0 8px 25px rgba(53, 15, 8, 0.08), 0 2px 6px rgba(53, 15, 8, 0.12);
+  /* Animasi masuk halus */
+  animation: fadeInUp 0.8s ease both;
+  position: relative;
+  z-index: 1;
+  /* Tambahan: backdrop blur untuk efek modern */
+  backdrop-filter: blur(2px);
 }
 
 /* Judul halaman */
@@ -38,6 +49,23 @@
   letter-spacing: -0.02em;
   border-left: 6px solid #350f08;
   padding-left: 1rem;
+  /* Animasi masuk dengan delay */
+  animation: fadeInLeft 0.8s ease both;
+  animation-delay: 0.1s;
+  position: relative;
+}
+
+/* Garis dekoratif bawah judul */
+.faq-text-section h1::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 1rem;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #350f08, transparent);
+  border-radius: 2px;
+  animation: expandWidth 0.8s ease both 0.4s;
 }
 
 /* Akordion */
@@ -45,6 +73,19 @@
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  position: relative;
+}
+
+/* Garis penghubung antar item (opsional) */
+.accordion::before {
+  content: '';
+  position: absolute;
+  left: 28px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, rgba(53, 15, 8, 0.1), transparent);
+  z-index: 0;
 }
 
 .accordion-item {
@@ -52,11 +93,52 @@
   border-radius: 16px;
   overflow: hidden;
   background: #ffffff;
-  transition: box-shadow 0.2s ease;
+  /* Transisi lebih kaya */
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              border-color 0.3s ease,
+              background 0.3s ease;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 0.6s cubic-bezier(0.22, 0.61, 0.36, 1) both;
 }
 
+/* Delay animasi masuk per item */
+.accordion-item:nth-child(1) { animation-delay: 0.1s; }
+.accordion-item:nth-child(2) { animation-delay: 0.2s; }
+.accordion-item:nth-child(3) { animation-delay: 0.3s; }
+.accordion-item:nth-child(4) { animation-delay: 0.4s; }
+.accordion-item:nth-child(5) { animation-delay: 0.5s; }
+.accordion-item:nth-child(6) { animation-delay: 0.6s; }
+.accordion-item:nth-child(7) { animation-delay: 0.7s; }
+.accordion-item:nth-child(8) { animation-delay: 0.8s; }
+.accordion-item:nth-child(9) { animation-delay: 0.9s; }
+.accordion-item:nth-child(10) { animation-delay: 1.0s; }
+
 .accordion-item:hover {
-  box-shadow: 0 4px 12px rgba(53, 15, 8, 0.06);
+  box-shadow: 0 12px 28px rgba(53, 15, 8, 0.15);
+  transform: translateY(-4px) scale(1.01);
+  border-color: #c9b6ae;
+  background: #fffdfc;
+}
+
+/* Efek highlight sisi kiri saat hover */
+.accordion-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, #350f08, #7a3b2a);
+  border-radius: 0 4px 4px 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease;
+}
+
+.accordion-item:hover::before {
+  transform: scaleY(1);
 }
 
 /* Tombol header */
@@ -71,12 +153,29 @@
   cursor: pointer;
   text-align: left;
   font: inherit;
-  transition: background 0.15s ease;
+  transition: background 0.2s ease, color 0.2s ease, padding-left 0.25s ease;
   background: #faf6f4;
+  position: relative;
+  z-index: 2;
 }
 
 .accordion-header:hover {
   background: #f0e8e4;
+  padding-left: 2rem; /* Geser sedikit ke kanan */
+}
+
+/* Efek ripple saat klik (CSS-only) */
+.accordion-header:active::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background: rgba(53, 15, 8, 0.15);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: ripple 0.6s ease-out;
 }
 
 .accordion-header h2 {
@@ -87,6 +186,18 @@
   flex: 1;
   padding-right: 1rem;
   line-height: 1.4;
+  transition: color 0.2s ease, letter-spacing 0.3s ease;
+}
+
+.accordion-header:hover h2 {
+  color: #350f08;
+  letter-spacing: 0.3px;
+}
+
+/* Fokus keyboard */
+.accordion-header:focus-visible {
+  outline: 3px solid rgba(53, 15, 8, 0.5);
+  outline-offset: 2px;
 }
 
 /* Ikon toggle */
@@ -96,30 +207,58 @@
   color: #350f08;
   flex-shrink: 0;
   width: 2rem;
-  text-align: center;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   line-height: 1;
-  transition: transform 0.2s ease;
+  background: rgba(53, 15, 8, 0.05);
+  border-radius: 50%;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+              background 0.3s ease,
+              color 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+/* Rotasi ikon saat konten terbuka (dukungan modern + fallback class) */
+.accordion-item.open .toggle-icon,
+.accordion-item:has(.accordion-content.open) .toggle-icon {
+  transform: rotate(45deg);
+  background: #350f08;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(53, 15, 8, 0.3);
+}
+
+/* Efek pulse halus saat hover pada ikon */
+.accordion-header:hover .toggle-icon {
+  animation: pulseIcon 0.5s ease;
 }
 
 /* ========== KONTEN AKORDION DENGAN ANIMASI ========== */
 .accordion-content {
-  max-height: 0;                /* tertutup */
+  max-height: 0;
   opacity: 0;
   padding: 0 1.5rem;
   background: #ffffff;
-  border-top: 1px solid transparent; /* hilang saat tertutup */
+  border-top: 1px solid transparent;
   overflow: hidden;
-  transition: max-height 0.4s ease-in-out,
-              opacity 0.3s ease-in-out,
-              padding 0.4s ease-in-out,
-              border-color 0.4s ease-in-out;
+  transform: translateY(-8px);
+  will-change: max-height, opacity, padding, transform, border-color;
+  transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.35s ease,
+              padding 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.45s ease,
+              transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .accordion-content.open {
-  max-height: 800px;            /* cukup besar untuk semua konten */
+  max-height: 800px;
   opacity: 1;
   padding: 1.5rem 1.5rem;
   border-top-color: #ede5e1;
+  transform: translateY(0);
+  /* Tambahan: animasi fade-in teks */
+  animation: contentFadeIn 0.5s ease both;
 }
 
 .accordion-content p {
@@ -129,6 +268,72 @@
   color: #2d1f1b;
   white-space: pre-line;
   word-break: break-word;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Saat konten terbuka, paragraf muncul */
+.accordion-content.open p {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.1s;
+}
+
+/* ========== KEYFRAMES ========== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes expandWidth {
+  from { width: 0; }
+  to { width: 60px; }
+}
+
+@keyframes pulseIcon {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+@keyframes ripple {
+  from {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0.8;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(4);
+    opacity: 0;
+  }
+}
+
+@keyframes contentFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ========== RESPONSIF ========== */
@@ -165,6 +370,9 @@
     font-size: 1.6rem;
     padding-left: 0.75rem;
   }
+  .faq-text-section h1::after {
+    left: 0.75rem;
+  }
   .accordion-header {
     padding: 1rem 1rem;
   }
@@ -174,6 +382,7 @@
   .toggle-icon {
     font-size: 1.5rem;
     width: 1.5rem;
+    height: 1.5rem;
   }
   .accordion-content.open {
     padding: 1rem 1rem;
@@ -194,5 +403,16 @@
   }
   .accordion-header h2 {
     font-size: 1.2rem;
+  }
+}
+
+/* ========== AKSESIBILITAS: REDUCE MOTION ========== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
