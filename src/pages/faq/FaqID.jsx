@@ -60,9 +60,9 @@ function FaqID() {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  const handleItemClick = (index) => {
-    toggleFaq(index);
-  };
+  // const handleItemClick = (index) => {
+  //   toggleFaq(index);
+  // };
 
   const handleHeaderClick = (e, index) => {
     e.stopPropagation();
