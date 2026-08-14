@@ -240,7 +240,7 @@
 
 /* Pulse saat hover ikon */
 .accordion-header:hover .toggle-icon {
-  animation: pulseIcon 0.5s ease;
+  animation: pulseIcon 0.4s ease;
 }
 
 /* ========== KONTEN AKORDION DENGAN ANIMASI ========== */
@@ -266,7 +266,7 @@
   padding: 1.5rem 1.5rem;
   border-top-color: #ede5e1;
   transform: translateY(0);
-  animation: contentFadeIn 0.5s ease both;
+  /* animation: contentFadeIn 0.5s ease both; */
 }
 
 .accordion-content p {
@@ -279,6 +279,14 @@
   opacity: 0;
   transform: translateY(10px);
   transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* TAMBAHAN KODE HANGING INDENT DI SINI */
+.accordion-content p.hanging-indent {
+  padding-left: 1.8rem;
+  text-indent: -1.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .accordion-content.open p {
