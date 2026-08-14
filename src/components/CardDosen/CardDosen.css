@@ -2,38 +2,26 @@
 @keyframes titleReveal {
   0% {
     opacity: 0;
-    transform: translateY(-30px) scale(0.9);
-    filter: blur(10px);
-  }
-  60% {
-    opacity: 1;
-    transform: translateY(5px) scale(1.02);
-    filter: blur(1px);
+    transform: translateY(-20px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0) scale(1);
-    filter: blur(0);
+    transform: translateY(0);
   }
 }
 
 @keyframes cardEntrance {
   0% {
     opacity: 0;
-    transform: translateY(60px) scale(0.88) rotateX(12deg);
-    filter: blur(8px);
-  }
-  60% {
-    opacity: 1;
-    transform: translateY(-8px) scale(1.02) rotateX(-1deg);
-    filter: blur(1px);
+    transform: translateY(40px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0) scale(1) rotateX(0);
-    filter: blur(0);
+    transform: translateY(0);
   }
 }
+
+/* sisanya tetap persis seperti semula (shimmer, gradientText, pulseBorder, float, dll) */
 
 @keyframes shimmer {
   0% {
@@ -98,7 +86,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 25px;
-  padding-top: 30px;
+  padding-top: 10px;
   align-items: stretch;
   max-width: 1320px;
   margin: 0 auto;
