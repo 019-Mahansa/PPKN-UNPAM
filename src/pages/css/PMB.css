@@ -392,3 +392,446 @@
         padding: 32px 24px 32px;
     }
 }
+
+/* =========================================================
+   ADMISSION 2026 (jadwal Gelombang 1–4)
+   ========================================================= */
+
+.pmbDates {
+    padding: 72px 40px 100px;
+    background: var(--pmb-surface);
+}
+
+.pmbDates__inner {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.pmbDatesTitles h1 {
+    margin: 0 0 32px;
+    font-family: "Sora", "Inter", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    color: var(--pmb-ink);
+}
+
+.pmbDates__listHead {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.pmbDates__listHead h2 {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--pmb-ink);
+}
+
+.pmbDates__more {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--pmb-maroon);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.pmbDates__moreIcon {
+    display: inline-flex;
+    width: 26px;
+    height: 26px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1.5px solid var(--pmb-maroon);
+    text-decoration: none;
+}
+
+.pmbDates__moreIcon svg {
+    width: 13px;
+    height: 13px;
+}
+
+.pmbbox {
+    display: flex;
+    flex-direction: column;
+    background: var(--pmb-paper);
+    border: 1px solid var(--pmb-line);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.pmbbox__row {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 20px 28px;
+    border-bottom: 1px solid var(--pmb-line);
+}
+
+.pmbbox__row:last-child {
+    border-bottom: none;
+}
+
+.pmbbox__date {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    flex: 0 0 190px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--pmb-ink);
+}
+
+.pmbbox__date svg {
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+    color: var(--pmb-muted);
+}
+
+.pmbbox__status {
+    flex: 0 0 auto;
+    padding: 5px 14px;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.pmbbox__status--closed {
+    border: 1px solid var(--pmb-line);
+    color: var(--pmb-muted);
+    background: transparent;
+}
+
+.pmbbox__status--open {
+    background: var(--pmb-maroon);
+    color: #fff;
+}
+
+.pmbbox__title {
+    flex: 1 1 auto;
+    min-width: 160px;
+    margin: 0;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--pmb-ink);
+}
+
+.pmbbox__wave {
+    flex: 0 0 auto;
+    padding: 6px 16px;
+    border-radius: 999px;
+    background: rgba(122, 22, 38, 0.1);
+    color: var(--pmb-maroon);
+    font-size: 0.78rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.pmbbox__cta {
+    flex: 0 0 auto;
+    padding: 9px 20px;
+    border-radius: 999px;
+    border: 1.5px solid var(--pmb-maroon);
+    color: var(--pmb-maroon);
+    cursor:pointer;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.pmbbox__ctac {
+    flex: 0 0 auto;
+    padding: 9px 20px;
+    border-radius: 999px;
+    border: 1.5px solid var(--pmb-maroon);
+    background-color: var(--pmb-maroon);
+    color: #fff;
+    cursor: not-allowed;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.pmbbox__cta:hover {
+    background: var(--pmb-maroon);
+    color: #fff;
+}
+
+@media (max-width: 900px) {
+    .pmbDates {
+        padding: 56px 24px 72px;
+    }
+
+    .pmbbox__row {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 18px 20px;
+    }
+
+    .pmbbox__date {
+        flex: 1 1 100%;
+    }
+
+    .pmbbox__title {
+        flex: 1 1 100%;
+        order: 3;
+    }
+
+    .pmbbox__cta {
+        margin-left: auto;
+    }
+}
+
+/* =========================================================
+   RINCIAN BIAYA PENDIDIKAN
+   ========================================================= */
+
+.pmbCost {
+    padding: 80px 40px 120px;
+    background: var(--pmb-paper);
+}
+
+.pmbCost__inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pmbCost__heading {
+    margin: 0 0 18px;
+    font-family: "Sora", "Inter", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 3.6vw, 2.8rem);
+    color: var(--pmb-ink);
+}
+
+.pmbCost__heading-accent {
+    color: var(--pmb-maroon);
+}
+
+.pmbCost__sub {
+    max-width: 58ch;
+    margin: 0 auto 36px;
+    font-size: 1.1rem;
+    line-height: 1.65;
+    color: var(--pmb-muted);
+}
+
+.pmbCost__badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 32px;
+}
+
+.pmbCost__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    border-radius: 999px;
+    font-size: 0.92rem;
+    font-weight: 600;
+}
+
+.pmbCost__badge svg {
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+}
+
+.pmbCost__badge--discount {
+    background: rgba(30, 122, 74, 0.08);
+    color: #1E7A4A;
+    border: 1px solid rgba(30, 122, 74, 0.25);
+}
+
+.pmbCost__badge--wave {
+    background: rgba(122, 22, 38, 0.08);
+    color: var(--pmb-maroon);
+    border: 1px solid rgba(122, 22, 38, 0.2);
+}
+
+.pmbCost__tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.pmbCost__tab {
+    padding: 16px 36px;
+    border-radius: 16px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: #fff;
+    background: linear-gradient(135deg, var(--pmb-maroon) 0%, var(--pmb-maroon-dark) 100%);
+}
+
+.pmbCost__card {
+    text-align: left;
+    border: 1px solid var(--pmb-line);
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px -36px rgba(23, 20, 15, 0.28);
+}
+
+.pmbCost__cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 28px 40px;
+    background: linear-gradient(135deg, var(--pmb-maroon) 0%, var(--pmb-maroon-dark) 100%);
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.pmbCost__cardHeader svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.pmbCost__tableWrap {
+    overflow-x: auto;
+}
+
+.pmbCost__table {
+    width: 100%;
+    min-width: 680px;
+    border-collapse: collapse;
+}
+
+.pmbCost__table thead th {
+    text-align: left;
+    padding: 20px 40px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--pmb-muted);
+    background: var(--pmb-surface);
+    border-bottom: 1px solid var(--pmb-line);
+}
+
+.pmbCost__table td {
+    padding: 22px 40px;
+    border-bottom: 1px solid var(--pmb-line);
+    vertical-align: top;
+    font-size: 1.02rem;
+}
+
+.pmbCost__table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.pmbCost__table tr.is-highlight td {
+    background: rgba(214, 158, 46, 0.12);
+}
+
+.pmbCost__rowLabel {
+    display: block;
+    font-weight: 700;
+    color: var(--pmb-ink);
+    font-size: 1.02rem;
+}
+
+.pmbCost__rowSub {
+    display: block;
+    margin-top: 6px;
+    max-width: 34ch;
+    font-size: 0.85rem;
+    line-height: 1.55;
+    color: var(--pmb-muted);
+}
+
+.pmbCost__amount {
+    font-weight: 700;
+    font-size: 1.08rem;
+    color: var(--pmb-maroon);
+    white-space: nowrap;
+}
+
+.pmbCost__note {
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: var(--pmb-muted);
+}
+
+.pmbCost__summary {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 28px 40px 36px;
+    background: var(--pmb-surface);
+}
+
+.pmbCost__summaryIcon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: rgba(122, 22, 38, 0.1);
+    color: var(--pmb-maroon);
+}
+
+.pmbCost__summaryIcon svg {
+    width: 19px;
+    height: 19px;
+}
+
+.pmbCost__summaryTitle {
+    margin: 4px 0 10px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--pmb-ink);
+}
+
+.pmbCost__summaryValues {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    font-size: 1rem;
+    color: var(--pmb-ink);
+}
+
+.pmbCost__summaryValues strong {
+    color: var(--pmb-maroon);
+}
+
+@media (max-width: 900px) {
+    .pmbCost {
+        padding: 60px 24px 80px;
+    }
+
+    .pmbCost__cardHeader {
+        padding: 22px 24px;
+        font-size: 1.1rem;
+    }
+
+    .pmbCost__table thead th,
+    .pmbCost__table td {
+        padding: 18px 24px;
+    }
+
+    .pmbCost__summary {
+        padding: 24px 24px 28px;
+    }
+}
