@@ -60,12 +60,10 @@ function FaqID() {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  // Handler untuk klik pada item (selain header)
   const handleItemClick = (index) => {
     toggleFaq(index);
   };
 
-  // Handler untuk klik pada header (stopPropagation agar tidak double toggle)
   const handleHeaderClick = (e, index) => {
     e.stopPropagation();
     toggleFaq(index);
@@ -95,7 +93,19 @@ function FaqID() {
                 <div
                   className={`accordion-content ${openIndex === index ? "open" : ""}`}
                 >
-                  <p>{item.answer}</p>
+                  {item.answer.split('\n').map((line, i) => {
+                    // Deteksi pattern (1), (2), dst. di awal baris
+                    const isNumberedPoint = /^\(\d+\)/.test(line.trim());
+                    
+                    return (
+                      <p 
+                        key={i} 
+                        className={isNumberedPoint ? "hanging-indent" : ""}
+                      >
+                        {line}
+                      </p>
+                    );
+                  })}
                 </div>
               </div>
             ))}
