@@ -1,9 +1,13 @@
-/* PMB.css — tema hitam & maroon */
+/* =========================================================
+   PMB.css — tema hitam & maroon (updated primary #350e08)
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap');
 
 .pmbPage {
     --pmb-ink: #17140F;
-    --pmb-maroon: #7A1626;
-    --pmb-maroon-dark: #55101B;
+    --pmb-maroon: #350e08;          /* primary */
+    --pmb-maroon-dark: #2a0b06;      /* darker shade */
     --pmb-muted: #6B655F;
     --pmb-paper: #FFFFFF;
     --pmb-surface: #F4EFE9;
@@ -12,10 +16,48 @@
     background: var(--pmb-paper);
     color: var(--pmb-ink);
     font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    overflow-x: hidden;
 }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* ---------- Reveal Animation ---------- */
+.reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s cubic-bezier(0.22, 0.61, 0.36, 1),
+                transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+    will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
 
 .pmb {
     background: var(--pmb-paper);
+    position: relative;
+    overflow: hidden;
+}
+
+.pmb::before {
+    content: "";
+    position: absolute;
+    top: -20%;
+    right: -10%;
+    width: 50vw;
+    height: 50vw;
+    background: radial-gradient(circle, rgba(53, 14, 8, 0.05) 0%, transparent 70%);
+    pointer-events: none;
 }
 
 .pmb__hero {
@@ -28,8 +70,7 @@
     gap: 48px;
 }
 
-/* ---------- Kiri: teks ---------- */
-
+/* ---------- Kiri ---------- */
 .pmb__left {
     display: flex;
     flex-direction: column;
@@ -48,12 +89,14 @@
 .pmb__title-base {
     display: block;
     color: var(--pmb-ink);
+    animation: fadeInUp 0.8s ease both;
 }
 
 .pmb__title-accent {
     display: block;
     color: var(--pmb-maroon);
     margin-top: 4px;
+    animation: fadeInUp 0.8s ease 0.15s both;
 }
 
 .pmb__desc {
@@ -62,6 +105,7 @@
     font-size: 1.05rem;
     line-height: 1.6;
     color: var(--pmb-muted);
+    animation: fadeInUp 0.8s ease 0.3s both;
 }
 
 .pmb__cta {
@@ -77,13 +121,16 @@
     font-size: 0.95rem;
     text-decoration: none;
     background: transparent;
-    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease,
+                box-shadow 0.3s ease;
+    animation: fadeInUp 0.8s ease 0.45s both;
 }
 
 .pmb__cta:hover {
     background: var(--pmb-maroon);
     color: #fff;
-    transform: translateY(-1px);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px -8px rgba(53, 14, 8, 0.45);
 }
 
 .pmb__cta:focus-visible {
@@ -95,6 +142,11 @@
     display: inline-flex;
     width: 16px;
     height: 16px;
+    transition: transform 0.3s ease;
+}
+
+.pmb__cta:hover .pmb__cta-icon {
+    transform: translate(2px, -2px);
 }
 
 .pmb__cta-icon svg {
@@ -102,8 +154,7 @@
     height: 100%;
 }
 
-/* ---------- Kanan: gambar ---------- */
-
+/* ---------- Kanan ---------- */
 .pmb__right {
     display: flex;
     justify-content: center;
@@ -117,6 +168,8 @@
     border-radius: 28px;
     overflow: hidden;
     background: var(--pmb-surface);
+    box-shadow: 0 30px 60px -20px rgba(23, 20, 15, 0.25);
+    animation: float 6s ease-in-out infinite;
 }
 
 .pmb__imagePlaceholder {
@@ -127,15 +180,16 @@
     align-items: center;
     justify-content: center;
     gap: 12px;
-}
-
-.pmb__imagePlaceholder svg {
-    width: 55%;
+    background: linear-gradient(145deg, #faf7f2 0%, #ece5dc 100%);
 }
 
 .pmb__imagePlaceholder-label {
     font-size: 0.8rem;
     color: var(--pmb-muted);
+    background: rgba(255, 255, 255, 0.7);
+    padding: 6px 14px;
+    border-radius: 999px;
+    backdrop-filter: blur(4px);
 }
 
 .pmb__pattern {
@@ -145,39 +199,11 @@
     width: 44%;
     opacity: 0.9;
     pointer-events: none;
-}
-
-/* ---------- Responsif ---------- */
-
-@media (max-width: 900px) {
-    .pmb__hero {
-        grid-template-columns: 1fr;
-        padding: 56px 24px 64px;
-        gap: 40px;
-    }
-
-    .pmb__right {
-        order: -1;
-    }
-
-    .pmb__imageFrame {
-        max-width: 360px;
-        margin: 0 auto;
-    }
-
-    .pmb__left {
-        align-items: flex-start;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .pmb__cta {
-        transition: none;
-    }
+    animation: spin 20s linear infinite;
 }
 
 /* =========================================================
-   PROGRAM (tab Sarjana / Pascasarjana)
+   PROGRAM
    ========================================================= */
 
 .pmbProgram {
@@ -214,15 +240,15 @@
 }
 
 /* ---------- Tabs ---------- */
-
 .pmbProgram__tabs {
     display: flex;
+    margin-bottom: 0;
 }
 
 .pmbProgram__tab {
     position: relative;
     z-index: 1;
-    padding: 16px 40px;
+    padding: 16px 46px;
     border: none;
     cursor: pointer;
     font-family: inherit;
@@ -231,21 +257,27 @@
     color: rgba(255, 255, 255, 0.75);
     background: linear-gradient(135deg, var(--pmb-maroon) 0%, var(--pmb-maroon-dark) 100%);
     opacity: 0.5;
-    clip-path: polygon(0 0, 100% 0, 84% 100%, 0 100%);
-    margin-right: -22px;
-    transition: opacity 0.2s ease;
+    clip-path: polygon(0 0, 100% 0, 86% 100%, 0 100%);
+    margin-right: -24px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .pmbProgram__tab:last-child {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(11% 0, 100% 0, 100% 100%, 0 100%);
     margin-right: 0;
     padding-left: 46px;
+    padding-right: 46px;
+}
+
+.pmbProgram__tab:hover {
+    opacity: 0.8;
 }
 
 .pmbProgram__tab.is-active {
     opacity: 1;
     color: #fff;
     z-index: 2;
+    transform: translateY(0);
 }
 
 .pmbProgram__tab:focus-visible {
@@ -254,7 +286,6 @@
 }
 
 /* ---------- Panel ---------- */
-
 .pmbProgram__panel {
     position: relative;
     border-radius: 0 28px 28px 28px;
@@ -265,6 +296,7 @@
         linear-gradient(135deg, var(--pmb-maroon) 0%, var(--pmb-maroon-dark) 100%);
     background-size: 18px 18px, 100% 100%;
     overflow: hidden;
+    animation: panelIn 0.6s ease both;
 }
 
 .pmbProgram__panelTop {
@@ -311,6 +343,13 @@
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.16);
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pmbProgram__card:hover {
+    transform: translateY(-6px);
+    background: rgba(255, 255, 255, 0.14);
+    box-shadow: 0 20px 30px -15px rgba(0, 0, 0, 0.3);
 }
 
 .pmbProgram__cardIcon {
@@ -349,7 +388,8 @@
     font-weight: 600;
     font-size: 0.9rem;
     text-decoration: none;
-    transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+    transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease,
+                box-shadow 0.3s ease;
 }
 
 .pmbProgram__btn--outline {
@@ -360,6 +400,7 @@
 
 .pmbProgram__btn--outline:hover {
     background: rgba(255, 255, 255, 0.12);
+    transform: translateY(-2px);
 }
 
 .pmbProgram__btn--solid {
@@ -369,32 +410,12 @@
 }
 
 .pmbProgram__btn--solid:hover {
-    transform: translateY(-1px);
-}
-
-/* ---------- Responsif ---------- */
-
-@media (max-width: 900px) {
-    .pmbProgram {
-        padding: 56px 24px 72px;
-    }
-
-    .pmbProgram__cards {
-        grid-template-columns: 1fr;
-    }
-
-    .pmbProgram__tab {
-        padding: 14px 22px;
-        font-size: 0.85rem;
-    }
-
-    .pmbProgram__panel {
-        padding: 32px 24px 32px;
-    }
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.35);
 }
 
 /* =========================================================
-   ADMISSION 2026 (jadwal Gelombang 1–4)
+   ADMISSION 2026
    ========================================================= */
 
 .pmbDates {
@@ -440,6 +461,11 @@
     color: var(--pmb-maroon);
     text-decoration: underline;
     text-underline-offset: 3px;
+    transition: color 0.2s ease;
+}
+
+.pmbDates__more:hover {
+    color: var(--pmb-maroon-dark);
 }
 
 .pmbDates__moreIcon {
@@ -451,6 +477,12 @@
     border-radius: 50%;
     border: 1.5px solid var(--pmb-maroon);
     text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.pmbDates__more:hover .pmbDates__moreIcon {
+    background: var(--pmb-maroon);
+    color: #fff;
 }
 
 .pmbDates__moreIcon svg {
@@ -465,6 +497,7 @@
     border: 1px solid var(--pmb-line);
     border-radius: 20px;
     overflow: hidden;
+    box-shadow: 0 20px 40px -20px rgba(23, 20, 15, 0.15);
 }
 
 .pmbbox__row {
@@ -473,6 +506,11 @@
     gap: 24px;
     padding: 20px 28px;
     border-bottom: 1px solid var(--pmb-line);
+    transition: background 0.25s ease;
+}
+
+.pmbbox__row:hover {
+    background: #FAF7F2;
 }
 
 .pmbbox__row:last-child {
@@ -514,6 +552,7 @@
 .pmbbox__status--open {
     background: var(--pmb-maroon);
     color: #fff;
+    animation: pulse 2s infinite;
 }
 
 .pmbbox__title {
@@ -529,74 +568,53 @@
     flex: 0 0 auto;
     padding: 6px 16px;
     border-radius: 999px;
-    background: rgba(122, 22, 38, 0.1);
+    background: rgba(53, 14, 8, 0.1);
     color: var(--pmb-maroon);
     font-size: 0.78rem;
     font-weight: 700;
     white-space: nowrap;
 }
 
-.pmbbox__cta {
-    flex: 0 0 auto;
-    padding: 9px 20px;
-    border-radius: 999px;
-    border: 1.5px solid var(--pmb-maroon);
-    color: var(--pmb-maroon);
-    cursor:pointer;
-    font-size: 0.82rem;
-    font-weight: 600;
-    text-decoration: none;
-    white-space: nowrap;
-    transition: background 0.2s ease, color 0.2s ease;
-}
-
+.pmbbox__cta,
 .pmbbox__ctac {
     flex: 0 0 auto;
+    min-width: 148px;
     padding: 9px 20px;
     border-radius: 999px;
     border: 1.5px solid var(--pmb-maroon);
-    background-color: var(--pmb-maroon);
-    color: #fff;
-    cursor: not-allowed;
     font-size: 0.82rem;
     font-weight: 600;
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     white-space: nowrap;
-    transition: background 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.pmbbox__cta {
+    color: var(--pmb-maroon);
+    background: transparent;
 }
 
 .pmbbox__cta:hover {
     background: var(--pmb-maroon);
     color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px -6px rgba(53, 14, 8, 0.4);
 }
 
-@media (max-width: 900px) {
-    .pmbDates {
-        padding: 56px 24px 72px;
-    }
-
-    .pmbbox__row {
-        flex-wrap: wrap;
-        gap: 12px;
-        padding: 18px 20px;
-    }
-
-    .pmbbox__date {
-        flex: 1 1 100%;
-    }
-
-    .pmbbox__title {
-        flex: 1 1 100%;
-        order: 3;
-    }
-
-    .pmbbox__cta {
-        margin-left: auto;
-    }
+.pmbbox__ctac {
+    background-color: var(--pmb-maroon);
+    color: #fff;
+    cursor: not-allowed;
+    opacity: 0.7;
 }
 
 /* =========================================================
-   RINCIAN BIAYA PENDIDIKAN
+   RINCIAN BIAYA
    ========================================================= */
 
 .pmbCost {
@@ -646,6 +664,11 @@
     border-radius: 999px;
     font-size: 0.92rem;
     font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.pmbCost__badge:hover {
+    transform: translateY(-2px);
 }
 
 .pmbCost__badge svg {
@@ -661,9 +684,9 @@
 }
 
 .pmbCost__badge--wave {
-    background: rgba(122, 22, 38, 0.08);
+    background: rgba(53, 14, 8, 0.08);
     color: var(--pmb-maroon);
-    border: 1px solid rgba(122, 22, 38, 0.2);
+    border: 1px solid rgba(53, 14, 8, 0.2);
 }
 
 .pmbCost__tabs {
@@ -679,6 +702,7 @@
     font-size: 1.05rem;
     color: #fff;
     background: linear-gradient(135deg, var(--pmb-maroon) 0%, var(--pmb-maroon-dark) 100%);
+    box-shadow: 0 10px 20px -10px rgba(53, 14, 8, 0.5);
 }
 
 .pmbCost__card {
@@ -687,6 +711,11 @@
     border-radius: 28px;
     overflow: hidden;
     box-shadow: 0 30px 60px -36px rgba(23, 20, 15, 0.28);
+    transition: box-shadow 0.4s ease;
+}
+
+.pmbCost__card:hover {
+    box-shadow: 0 40px 80px -30px rgba(23, 20, 15, 0.4);
 }
 
 .pmbCost__cardHeader {
@@ -733,6 +762,11 @@
     border-bottom: 1px solid var(--pmb-line);
     vertical-align: top;
     font-size: 1.02rem;
+    transition: background 0.2s ease;
+}
+
+.pmbCost__table tbody tr:hover td {
+    background: rgba(53, 14, 8, 0.04);
 }
 
 .pmbCost__table tbody tr:last-child td {
@@ -788,7 +822,7 @@
     height: 38px;
     flex-shrink: 0;
     border-radius: 50%;
-    background: rgba(122, 22, 38, 0.1);
+    background: rgba(53, 14, 8, 0.1);
     color: var(--pmb-maroon);
 }
 
@@ -816,7 +850,126 @@
     color: var(--pmb-maroon);
 }
 
+/* =========================================================
+   KEYFRAMES
+   ========================================================= */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes panelIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(53, 14, 8, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 0 8px rgba(53, 14, 8, 0);
+    }
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
 @media (max-width: 900px) {
+    .pmb__hero {
+        grid-template-columns: 1fr;
+        padding: 56px 24px 64px;
+        gap: 40px;
+    }
+
+    .pmb__right {
+        order: -1;
+    }
+
+    .pmb__imageFrame {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    .pmbProgram {
+        padding: 56px 24px 72px;
+    }
+
+    .pmbProgram__cards {
+        grid-template-columns: 1fr;
+    }
+
+    .pmbProgram__tab {
+        padding: 14px 40px;
+        font-size: 0.85rem;
+    }
+
+    .pmbProgram__panel {
+        padding: 32px 24px 32px;
+    }
+
+    .pmbDates {
+        padding: 56px 24px 72px;
+    }
+
+    .pmbbox__row {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 18px 20px;
+    }
+
+    .pmbbox__date {
+        flex: 1 1 100%;
+    }
+
+    .pmbbox__title {
+        flex: 1 1 100%;
+        order: 3;
+    }
+
+    .pmbbox__cta {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .pmbbox__ctac {
+        width: 100%;
+        text-align: center;
+    }
+
     .pmbCost {
         padding: 60px 24px 80px;
     }
@@ -833,5 +986,23 @@
 
     .pmbCost__summary {
         padding: 24px 24px 28px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .pmb__title-base,
+    .pmb__title-accent,
+    .pmb__desc,
+    .pmb__cta,
+    .pmb__imageFrame,
+    .pmb__pattern {
+        animation: none !important;
+        transition: none !important;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
     }
 }
