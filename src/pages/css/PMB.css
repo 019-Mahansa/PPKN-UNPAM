@@ -263,7 +263,7 @@
 }
 
 .pmbProgram__tab:last-child {
-    clip-path: polygon(6% 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(11% 0, 100% 0, 100% 100%, 0 100%);
     margin-right: 0;
     padding-left: 46px;
     padding-right: 46px;
