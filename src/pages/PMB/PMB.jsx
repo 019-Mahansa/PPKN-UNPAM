@@ -162,30 +162,13 @@ const tuition = {
   campus: "Tangsel",
 
   rows: [
-    {
-      label: "Formulir Pendaftaran",
-      subLabel: "Biaya pendaftaran mahasiswa baru",
-      regAB: "Rp100.000",
-      regC: "Rp100.000",
-      note: "Dibayarkan saat pendaftaran",
-      highlight: false,
-    },
-    {
-      label: "Uang Kuliah",
-      subLabel: "Biaya pendidikan per semester",
-      regAB: "Sesuai ketentuan",
-      regC: "Sesuai ketentuan",
-      note: "Dapat dibayarkan sesuai jadwal",
-      highlight: true,
-    },
-    {
-      label: "Biaya SKS",
-      subLabel: "Biaya berdasarkan jumlah SKS",
-      regAB: "Sesuai ketentuan",
-      regC: "Sesuai ketentuan",
-      note: "Mengikuti ketentuan universitas",
-      highlight: false,
-    },
+        { label: "Formulir Pendaftaran", regAB: "Rp100.000", regC: "Rp100.000", note: "Gel. 1: Diskon 50%" },
+        { label: "Jaket Almamater + KTM", regAB: "Rp250.000", regC: "Rp250.000", note: "Setelah lulus SPMB" },
+        { label: "Registrasi Awal Semester", regAB: "Rp250.000", regC: "Rp250.000", note: "Setiap awal semester" },
+        { label: "Biaya Kuliah (per semester)", regAB: "Rp1.500.000", regC: "Rp2.400.000", note: "A&B: Rp250rb/angsuran; C&CK: Rp400rb/angsuran", highlight: true },
+        { label: "Angsuran Praktikum", subLabel: "Khusus Fak. Teknik, MIPA, Ilmu Komputer, Ilmu Komunikasi & Desain, serta Pend. Jasmani", regAB: "Rp200.000", regC: "Rp300.000", note: "Dilunasi sebelum UAS" },
+        { label: "Biaya UTS", regAB: "Rp300.000", regC: "Rp400.000", note: "Dilunasi sebelum UTS" },
+        { label: "Biaya UAS", regAB: "Rp300.000", regC: "Rp400.000", note: "Dilunasi sebelum UAS" },
   ],
 
   registration: {
