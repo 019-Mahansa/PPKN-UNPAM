@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../css/PMB.css";
-import Gambar from "../../assets/image-removebg-preview.png";
+import Gambar from "../../assets/image-removebg-preview.webp";
 
 /* ========== Reveal on scroll ========== */
 const Reveal = ({ children, className = "", delay = 0 }) => {

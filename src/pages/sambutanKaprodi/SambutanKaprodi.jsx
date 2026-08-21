@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useState, useCallback, useRef } from "react";
-import ichwaniPhoto from "../../assets/Bu_ichwani_with_text.png";
+import ichwaniPhoto from "../../assets/Bu_ichwani_with_text.webp";
 import "../css/SambutanKaprodi.css";
 
 function SambutanKaprodi() {

@@ -2,7 +2,7 @@ import react from "react";
 import '../css/TentangProdiNew.css';
 
 import unnpam from "../../assets/GedungdanFasilitasUNPAM/Pendidikan_Pancasila_dan_Kewarganegaraan.jpg"
-import Gambar_kaprodi from "../../assets/Bu_ichwani_with_text.png";
+import Gambar_kaprodi from "../../assets/Bu_ichwani_with_text.webp";
 export default function TentangProdiNewID() {
   const linked = () =>{
     window.open("https://ppkn.unpam.ac.id/sambutan-ketua-program-studi")
