@@ -25,7 +25,7 @@ export default function TentangProdiNewEN() {
             <iframe
               width="1200"
               height="515"
-              src="https://www.youtube.com/embed/SVWM1uO48FE"
+              src="https://www.youtube.com/embed/t0TRfkNVWJk?t=0"
               title="PPKn Study Program Profile at Pamulang University"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -40,8 +40,8 @@ export default function TentangProdiNewEN() {
         <div className="pimpinan">
           <div className="left">
           <p className="title-pimpinan">Head of Study Program</p>
-          <p className="title-pimpinan">Dr Ichwani Siti Utami, S.Pd. MH</p>
-          <p>Dr Ichwani Siti Utami is the head of the Pancasila and Civic Education study program at Pamulang University.</p>
+          <p className="title-pimpinan">Dr Ichwani Siti Utami, S.Pd. M.H</p>
+          <p>Dr Ichwani Siti Utami, S.Pd. M.H is the head of the Pancasila and Civic Education study program at Pamulang University.</p>
           <button className="btn">Head of Program's Welcome</button>
           </div>
           <div className="right">
