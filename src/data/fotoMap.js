@@ -4,33 +4,32 @@ import icon from "../assets/icon.png";
 import ichwani from "../assets/imageDosen/Ichwani.png";
 import sugiyanto from "../assets/imageDosen/sugiyanto.png";
 import roni from "../assets/imageDosen/roni.png";
-import nurdiyana from "../assets/imageDosen/nurdiyana.jpg";
-import herdi from "../assets/imageDosen/herdi_wisman_jaya.jpg";
-import etiHayati from "../assets/imageDosen/eti hayati.png";
-import ahmadNana from "../assets/imageDosen/Ahmad_Nana_Mahmur.jpg";
-import dedeSiswandi from "../assets/imageDosen/R_dede_Siswandi.jpg";
-import setiawati from "../assets/imageDosen/Setiawati.jpg";
-import masFierma from "../assets/imageDosen/Mas_Fierna_Janvierna.jpg";
-import yatti from "../assets/imageDosen/Yatti_rosmiati.jpg";
-import dewiPurnama from "../assets/imageDosen/Dewi_Purnama_seri.jpg";
-import heriKurnia from "../assets/imageDosen/Heri_Kurnia.jpg";
-import endang from "../assets/imageDosen/Endang_Prastini.jpg";
-import abiRobian from "../assets/imageDosen/Abi Robian.jpg";
-import dini from "../assets/imageDosen/Dini_handayani.jpg";
-import saepudin from "../assets/imageDosen/Saepudin_Karta_Sasmita.jpg";
-import lathifah from "../assets/imageDosen/Lathifah_Sandra.jpg";
-import raistin from "../assets/imageDosen/Raistin_Nur_Abidin.jpg";
-import susi from "../assets/imageDosen/Susi.jpg";
-import suheppy from "../assets/imageDosen/Suhappy.jpg";
-import nurullita from "../assets/imageDosen/Nurrullita.jpg";
-import yayuk from "../assets/imageDosen/Yayuk_Muji_Rahayu.jpg";
-import ivana from "../assets/imageDosen/Ivana_Aprilliana-.jpg";
-import suanto from "../assets/imageDosen/Suanto.jpg";
-import sulastri from "../assets/imageDosen/Sultastri.png";
-import Supandri from "../assets/imageDosen/Supandri, S.H, M.H.png";
-import linaMarlina from "../assets/imageDosen/Lina_marlina.jpg";
-import buNeng from "../assets/imageDosen/Bu_neng.jpg";
-import eka from "../assets/imageDosen/Eka_Setiana.jpg";
+import herdi from "../assets/imageDosen/Herdi.png";
+import etiHayati from "../assets/imageDosen/Eti.png";
+import ahmadNana from "../assets/imageDosen/Ahmad nana.png";
+import dedeSiswandi from "../assets/imageDosen/R dede.png";
+import setiawati from "../assets/imageDosen/Setiawati.png";
+import masFierma from "../assets/imageDosen/Mas fierna.png";
+import yatti from "../assets/imageDosen/Yatti.png";
+import dewiPurnama from "../assets/imageDosen/Dewi.png";
+import heriKurnia from "../assets/imageDosen/Heri kurnia.png";
+import endang from "../assets/imageDosen/Endang prastini.png";
+import abiRobian from "../assets/imageDosen/Abi Robian.png";
+import dini from "../assets/imageDosen/Dini handayani.png";
+import saepudin from "../assets/imageDosen/Saepudin.png";
+import lathifah from "../assets/imageDosen/Lathifah .png";
+import raistin from "../assets/imageDosen/Raistin Nur Abidin.png";
+import susi from "../assets/imageDosen/Susi.png";
+import suheppy from "../assets/imageDosen/Muhammad Suheppy.png";
+import nurullita from "../assets/imageDosen/Nurullita Sari.png";
+import yayuk from "../assets/imageDosen/Yayuk Muji Rahayu.png";
+import ivana from "../assets/imageDosen/Ivana Aprillia Harlyanikova,.png";
+import suanto from "../assets/imageDosen/Suanto.png";
+import sulastri from "../assets/imageDosen/Sulastri.png";
+import Supandri from "../assets/imageDosen/Supandri.png";
+import linaMarlina from "../assets/imageDosen/Lina Marlina.png";
+import buNeng from "../assets/imageDosen/Neng Nurhemah.png";
+import eka from "../assets/imageDosen/Eka Setiana,.png";
 
 // key = id dosen, value = import foto
 const fotoMap = {
@@ -38,7 +37,7 @@ const fotoMap = {
   2: sugiyanto, // Sugiyanto
   3: roni, // Roni Rustandi
   4: icon, // Aulia Nursyifa -> icon
-  5: nurdiyana, // Nurdiyana
+  5: icon, // Nurdiyana -> icon (file PNG belum ada di imageDosen)
   6: herdi, // Herdi Wisman Jaya
   7: etiHayati, // Eti Hayati
   8: icon, // Abd. Chaidir -> icon
