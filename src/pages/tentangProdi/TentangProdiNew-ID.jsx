@@ -44,8 +44,8 @@ export default function TentangProdiNewID() {
         <div className="pimpinan">
           <div className="left">
            <p className="title-pimpinan">Kepala Prodi</p>
-          <p className="title-pimpinan">Dr Ichwani Siti Utami, S.Pd. M.H</p>
-          <p>Dr Ichwani Siti Utami,S.Pd. M.H adalah kepala program studi Pendidikan Pancasila dan Kewarganegaraan di Universitas Pamulang.</p>
+          <p className="title-pimpinan">Dr. Ichwani Siti Utami, S.Pd. M.H</p>
+          <p>Dr. Ichwani Siti Utami, S.Pd. M.H adalah kepala program studi Pendidikan Pancasila dan Kewarganegaraan di Universitas Pamulang.</p>
           <button className="btn" onClick={linked}>Sambutan Kepala Prodi</button>
           </div>
           <div className="right">
