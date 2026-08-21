@@ -155,7 +155,7 @@
   transform: translateY(-12px) scale(1.02) rotateX(1.5deg) rotateY(1.5deg);
   box-shadow: 0 25px 35px -10px rgba(1, 34, 35, 0.2),
     0 10px 20px -8px rgba(0, 0, 0, 0.08);
-  border-color: #01222369;
+  border-color: #350e08b4;
 }
 
 /* ---------- FOTO DOSEN ---------- */
@@ -187,7 +187,7 @@
 }
 
 .card-dosen:hover .card-header h3 {
-  color: #012223;
+  color: #350e08;
   transform: translateY(-1px);
 }
 
@@ -199,7 +199,7 @@
 }
 
 .card-dosen:hover .id-wrap {
-  color: #012223;
+  color: #350e08;
   letter-spacing: 1.2px;
   transform: translateX(2px);
 }
@@ -243,7 +243,7 @@
   width: 0;
   height: 2px;
   border-radius: 50px;
-  background: #012223e0;
+  background: #350e08;
   transform: translateX(-50%);
   transition: width 0.5s cubic-bezier(0.34, 0.6, 0.15, 1);
   will-change: width;
@@ -268,7 +268,7 @@
 }
 
 .card-dosen:hover .pendidikan small {
-  color: #012223;
+  color: #350e08;
   transform: translateY(-3px);
   opacity: 0.9;
 }
@@ -286,7 +286,7 @@
   display: inline-block;
   margin-top: auto;
   padding: 10px 30px;
-  background-color: #012223;
+  background-color: #350e08;
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -322,7 +322,7 @@
 
 /* Hover pada tombol (tanpa shimmer tambahan) */
 .link-pddikti:hover {
-  background-color: #02393c;
+  background-color: #752013;
   transform: translateY(-3px) scale(1.04);
   box-shadow: 0 12px 25px -8px rgba(1, 34, 35, 0.4);
 }
