@@ -1,20 +1,17 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
+import ErrorPage from "./pages/ErrorPage/ErrorPage"
 import DaftarDosen from "./pages/daftarDosen/DaftarDosen";
-
 import VisiMisiID from "./pages/visiMisi/VisiMisi-ID";
 import VisiMisiEN from "./pages/visiMisi/VisiMisi-EN";
-
 import TentangProdiID from "./pages/tentangProdi/TentangProdi-ID";
 import TentangProdiNewID from "./pages/tentangProdi/TentangProdiNew-ID";
 import TentangProdiEN from "./pages/tentangProdi/tentangProdi-EN";
 import TentangProdiNewEN from "./pages/tentangProdi/TentangProdiNew-EN";
-
 import SambutanKaprodi from "./pages/sambutanKaprodi/SambutanKaprodi";
 import FaqID from "./pages/faq/FaqID";
 import FaqEN from "./pages/faq/FaqEN";
-
 import PMB from "./pages/PMB/PMB";
 
 import PrestasiMahasiswa from "./pages/PrestasiMahasiswa/PrestasiMahasiwa";
@@ -45,6 +42,7 @@ function App() {
 
         <Route path="/pmb/id" element={<PMB />}/>
         
+        <Route path="*" element={<ErrorPage/>}/>
         </Routes>
       </BrowserRouter>
     </div>
