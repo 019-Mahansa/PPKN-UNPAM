@@ -908,6 +908,9 @@
    ========================================================= */
 
 @media (max-width: 900px) {
+    .app-container {
+        min-height: 150vh;
+    }
     .pmb__hero {
         grid-template-columns: 1fr;
         padding: 56px 24px 64px;
