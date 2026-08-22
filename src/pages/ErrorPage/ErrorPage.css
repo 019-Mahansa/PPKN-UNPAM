@@ -58,33 +58,11 @@
   animation: errorFadeIn 0.8s ease-out both;
 }
 
-/* Badge universitas */
-.error-page__badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 0.5rem 1.25rem;
-  background: rgba(53, 14, 8, 0.06);
-  border: 1px solid rgba(53, 14, 8, 0.12);
-  border-radius: 50px;
-  color: var(--primary);
-  font-weight: 600;
-  font-size: 0.85rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-}
-
-.error-page__badge svg {
-  width: 20px;
-  height: 20px;
-}
-
 /* Ikon topi wisuda */
 .error-page__icon {
   width: 80px;
   height: 80px;
-  margin: 0 auto 1rem;
+  margin: 0 auto;
   color: var(--primary);
 }
 
