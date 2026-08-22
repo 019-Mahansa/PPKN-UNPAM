@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
+import Error from "./pages/ErrorPage/ErrorPage"
+
 import Home from "./pages/Home/Home";
 import DaftarDosen from "./pages/daftarDosen/DaftarDosen";
 
@@ -25,6 +27,9 @@ function App() {
     <div className="app-container">
       <BrowserRouter>
         <Routes>
+          {/* Error Page */}
+          <Route path="*" element={<Error/>}/>
+          
           <Route path="/" element={<Home />} />
 
           <Route path="/dosen" element={<Navigate to="/dosen/id" replace />} />
